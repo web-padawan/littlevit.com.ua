@@ -6,9 +6,9 @@
       <div class="header__brand">
         <div class="header__logo">&nbsp;</div>
 
-        <div class="header__madein madein">
-          <div class="madein__flag">&nbsp;</div>
-          <div class="madein__text">Вироблено у Великобританії</div>
+        <div class="header__madein">
+          <div class="header__flag">&nbsp;</div>
+          <div class="header__country">Вироблено у Великобританії</div>
         </div>
       </div>
 
