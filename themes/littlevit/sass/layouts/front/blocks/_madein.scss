@@ -1,0 +1,18 @@
+.madein {
+  margin-top: 21px;
+  margin-left: 32px;
+
+  &__flag {
+    @include sprite($s-madein);
+    display: inline-block;
+  }
+
+  &__text {
+    margin-left: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    color: $gray;
+    font-family: $ptserif-caption;
+    font-size: 15px;
+  }
+}

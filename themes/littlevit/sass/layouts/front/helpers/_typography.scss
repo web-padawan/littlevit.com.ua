@@ -1,0 +1,35 @@
+$ptsans-dir           : '../../../fonts/PTSans';
+$ptsans-caption-dir   : '../../../fonts/PTSans-Caption';
+$ptsans-narrow-dir    : '../../../fonts/PTSans-Narrow';
+$ptserif-dir          : '../../../fonts/PTSerif';
+$ptserif-caption-dir  : '../../../fonts/PTSerif-Caption';
+
+// PTSans
+@include font-face('PTSans', ('#{$ptsans-dir}/PTSans-Regular.woff', '#{$ptsans-dir}/PTSans-Regular.ttf'), '#{$ptsans-dir}/PTSans-Regular.eot');
+@include font-face('PTSans', ('#{$ptsans-dir}/PTSans-Bold.woff', '#{$ptsans-dir}/PTSans-Bold.ttf'), '#{$ptsans-dir}/PTSans-Bold.eot', bold, normal);
+@include font-face('PTSans', ('#{$ptsans-dir}/PTSans-Italic.woff', '#{$ptsans-dir}/PTSans-Italic.ttf'), '#{$ptsans-dir}/PTSans-Italic.eot', normal, italic);
+@include font-face('PTSans', ('#{$ptsans-dir}/PTSans-BoldItalic.woff', '#{$ptsans-dir}/PTSans-BoldItalic.ttf'), '#{$ptsans-dir}/PTSans-BoldItalic.eot', bold, italic);
+
+// PTSansCaption
+@include font-face('PTSansCaption', ('#{$ptsans-caption-dir}/PTSans-Caption.woff', '#{$ptsans-caption-dir}/PTSans-Caption.ttf'), '#{$ptsans-caption-dir}/PTSans-Caption.eot');
+@include font-face('PTSansCaption', ('#{$ptsans-caption-dir}/PTSans-CaptionBold.woff', '#{$ptsans-caption-dir}/PTSans-CaptionBold.ttf'), '#{$ptsans-caption-dir}/PTSans-CaptionBold.eot', bold, normal);
+
+// PTSansNarrow
+@include font-face('PTSansNarrow', ('#{$ptsans-narrow-dir}/PTSans-Narrow.woff', '#{$ptsans-narrow-dir}/PTSans-Narrow.ttf'), '#{$ptsans-narrow-dir}/PTSans-Narrow.eot');
+@include font-face('PTSansNarrow', ('#{$ptsans-narrow-dir}/PTSans-NarrowBold.woff', '#{$ptsans-narrow-dir}/PTSans-NarrowBold.ttf'), '#{$ptsans-narrow-dir}/PTSans-NarrowBold.eot', bold, normal);
+
+// PTSerif
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-Regular.woff', '#{$ptserif-dir}/PTSerif-Regular.ttf'), '#{$ptserif-dir}/PTSerif-Regular.eot');
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-Bold.woff', '#{$ptserif-dir}/PTSerif-Bold.ttf'), '#{$ptserif-dir}/PTSerif-Bold.eot', bold, normal);
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-Italic.woff', '#{$ptserif-dir}/PTSerif-Italic.ttf'), '#{$ptserif-dir}/PTSerif-Italic.eot', normal, italic);
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-BoldItalic.woff', '#{$ptserif-dir}/PTSerif-BoldItalic.ttf'), '#{$ptserif-dir}/PTSerif-BoldItalic.eot', bold, italic);
+
+// PTSerifCaption
+@include font-face('PTSerifCaption', ('#{$ptserif-caption-dir}/PTSerif-Caption.woff', '#{$ptserif-caption-dir}/PTSerif-Caption.ttf'), '#{$ptserif-caption-dir}/PTSerif-Caption.eot');
+@include font-face('PTSerifCaption', ('#{$ptserif-caption-dir}/PTSerif-CaptionItalic.woff', '#{$ptserif-caption-dir}/PTSerif-CaptionItalic.ttf'), '#{$ptserif-caption-dir}/PTSerif-CaptionItalic.eot', normal, italic);
+
+$ptsans           : 'PTSans', Helvetica, Arial, sans-serif;
+$ptsans-caption   : 'PTSansCaption', Helvetica, Arial, sans-serif;
+$ptsans-narrow    : 'PTSansNarrow', 'PTSans', Helvetica, Arial, sans-serif;
+$ptserif          : 'PTSerif', 'Times New Roman', serif;
+$ptserif-caption  : 'PTSerifCaption', 'PTSerif', 'Times New Roman', serif;

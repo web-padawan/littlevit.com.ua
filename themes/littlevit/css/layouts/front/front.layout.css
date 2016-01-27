@@ -1,0 +1,258 @@
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-Regular.eot");
+  src: url("../../../fonts/PTSans/PTSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-Regular.woff") format("woff"), url("../../../fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-Bold.eot");
+  src: url("../../../fonts/PTSans/PTSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-Bold.woff") format("woff"), url("../../../fonts/PTSans/PTSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-Italic.eot");
+  src: url("../../../fonts/PTSans/PTSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-Italic.woff") format("woff"), url("../../../fonts/PTSans/PTSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-BoldItalic.eot");
+  src: url("../../../fonts/PTSans/PTSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-BoldItalic.woff") format("woff"), url("../../../fonts/PTSans/PTSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSansCaption";
+  src: url("../../../fonts/PTSans-Caption/PTSans-Caption.eot");
+  src: url("../../../fonts/PTSans-Caption/PTSans-Caption.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans-Caption/PTSans-Caption.woff") format("woff"), url("../../../fonts/PTSans-Caption/PTSans-Caption.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSansCaption";
+  src: url("../../../fonts/PTSans-Caption/PTSans-CaptionBold.eot");
+  src: url("../../../fonts/PTSans-Caption/PTSans-CaptionBold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans-Caption/PTSans-CaptionBold.woff") format("woff"), url("../../../fonts/PTSans-Caption/PTSans-CaptionBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSansNarrow";
+  src: url("../../../fonts/PTSans-Narrow/PTSans-Narrow.eot");
+  src: url("../../../fonts/PTSans-Narrow/PTSans-Narrow.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans-Narrow/PTSans-Narrow.woff") format("woff"), url("../../../fonts/PTSans-Narrow/PTSans-Narrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSansNarrow";
+  src: url("../../../fonts/PTSans-Narrow/PTSans-NarrowBold.eot");
+  src: url("../../../fonts/PTSans-Narrow/PTSans-NarrowBold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans-Narrow/PTSans-NarrowBold.woff") format("woff"), url("../../../fonts/PTSans-Narrow/PTSans-NarrowBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("../../../fonts/PTSerif/PTSerif-Regular.eot");
+  src: url("../../../fonts/PTSerif/PTSerif-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif/PTSerif-Regular.woff") format("woff"), url("../../../fonts/PTSerif/PTSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("../../../fonts/PTSerif/PTSerif-Bold.eot");
+  src: url("../../../fonts/PTSerif/PTSerif-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif/PTSerif-Bold.woff") format("woff"), url("../../../fonts/PTSerif/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("../../../fonts/PTSerif/PTSerif-Italic.eot");
+  src: url("../../../fonts/PTSerif/PTSerif-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif/PTSerif-Italic.woff") format("woff"), url("../../../fonts/PTSerif/PTSerif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("../../../fonts/PTSerif/PTSerif-BoldItalic.eot");
+  src: url("../../../fonts/PTSerif/PTSerif-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif/PTSerif-BoldItalic.woff") format("woff"), url("../../../fonts/PTSerif/PTSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PTSerifCaption";
+  src: url("../../../fonts/PTSerif-Caption/PTSerif-Caption.eot");
+  src: url("../../../fonts/PTSerif-Caption/PTSerif-Caption.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif-Caption/PTSerif-Caption.woff") format("woff"), url("../../../fonts/PTSerif-Caption/PTSerif-Caption.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSerifCaption";
+  src: url("../../../fonts/PTSerif-Caption/PTSerif-CaptionItalic.eot");
+  src: url("../../../fonts/PTSerif-Caption/PTSerif-CaptionItalic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSerif-Caption/PTSerif-CaptionItalic.woff") format("woff"), url("../../../fonts/PTSerif-Caption/PTSerif-CaptionItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.header {
+  background: url("../../../images/front/header.jpg") no-repeat center top;
+  width: 100%;
+  height: 654px;
+}
+
+.header__container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+.header__container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.header__brand {
+  float: left;
+  padding-top: 30px;
+}
+
+.header__logo {
+  background: url("../../../images/front/logo.png") no-repeat center top;
+  width: 357px;
+  height: 227px;
+}
+
+.header__nav {
+  float: right;
+  width: 68%;
+  display: table;
+  clear: right;
+  margin-top: 60px;
+  list-style-type: none;
+}
+
+.header__item {
+  display: table-cell;
+  max-width: 100px;
+  color: #3e3e3e;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 15px;
+}
+
+.header__item--last {
+  text-align: center;
+}
+
+.header__navlink {
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  color: #3e3e3e;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.header__navlink:hover {
+  color: #585858;
+  text-decoration: underline;
+}
+
+.header__buy {
+  display: block;
+  float: left;
+  clear: left;
+  margin-left: 35px;
+  margin-top: 105px;
+  padding: 22px 70px;
+  background: #108e96;
+  color: #fff;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 23px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.header__buy:hover {
+  background: #0e787f;
+}
+
+.header__hgroup {
+  position: relative;
+  top: 180px;
+  margin: 0 auto;
+  max-width: 555px;
+  text-align: right;
+}
+
+.header__title {
+  color: #108e96;
+}
+
+.header__small {
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 42px;
+  font-style: italic;
+}
+
+.header__large {
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 83px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header__slogan {
+  margin-top: 42px;
+  margin-right: 10px;
+  font-family: "PTSansNarrow", "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.header__down {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -353px -307px;
+  width: 67px;
+  height: 67px;
+  display: block;
+  position: absolute;
+  left: 47%;
+  bottom: -34px;
+  text-decoration: none;
+}
+
+.madein {
+  margin-top: 21px;
+  margin-left: 32px;
+}
+
+.madein__flag {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -636px -106px;
+  width: 29px;
+  height: 19px;
+  display: inline-block;
+}
+
+.madein__text {
+  margin-left: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #3e3e3e;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 15px;
+}
