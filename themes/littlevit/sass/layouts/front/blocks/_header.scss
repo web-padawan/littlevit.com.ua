@@ -3,7 +3,7 @@
   width: 100%;
   height: 654px;
 
-  &__container {
+  &__inner {
     @include container;
     position: relative;
     height: 100%;

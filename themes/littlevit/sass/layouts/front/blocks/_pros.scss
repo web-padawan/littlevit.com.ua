@@ -1,0 +1,88 @@
+.pros {
+  height: 570px;
+  padding-top: 80px;
+  background: $lime;
+
+  &__inner {
+    @include container;
+    position: relative;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    color: #fff;
+    font-family: $ptserif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 24.5%;
+  }
+
+  &__circle {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    line-height: 135px;
+    border: solid 7px #fff;
+    border-radius: 50%;
+    text-align: center;
+
+    &--blue {
+      background: $blue;
+    }
+    &--gold {
+      background: $gold;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &--drop {
+      @include sprite($s-drop);
+    }
+    &--pipet {
+      @include sprite($s-pipet);
+    }
+    &--slice {
+      @include sprite($s-slice);
+    }
+    &--standard {
+      @include sprite($s-standard);
+    }
+  }
+
+  &__text {
+    max-width: 230px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: $ptsans-narrow;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  &__slogan {
+    background: url('../../../images/front/slogan.png') no-repeat center top;
+    position: absolute;
+    bottom: -121px;
+    left: 33%;
+    width: 489px;
+    height: 242px;
+    padding: 55px 45px 0 135px;
+    color: $gray-light;
+    font: bold italic 21px / 1.25 $ptserif;
+    text-align: center;
+  }
+}

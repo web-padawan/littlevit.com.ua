@@ -1,7 +1,7 @@
 <div<?php print $attributes; ?>>
 
   <header class="header">
-    <div class="header__container">
+    <div class="header__inner">
 
       <div class="header__brand">
         <div class="header__logo">&nbsp;</div>
@@ -32,3 +32,41 @@
       <a class="header__down" href="#">&nbsp;</a>
     </div>
   </header>
+
+  <div class="pros">
+    <div class="pros__inner">
+      <h2 class="pros__title">Переваги</h2>
+
+      <ul class="pros__list">
+        <li class="pros__item">
+          <div class="pros__circle pros__circle--blue">
+            <div class="pros__icon pros__icon--drop">&nbsp;</div>
+          </div>
+          <div class="pros__text">Ефективна форма.<br>Краплі більше підходять для здоров'я дітей молодшого віку, ніж пігулки та капсули.</div>
+        </li>
+        <li class="pros__item">
+          <div class="pros__circle pros__circle--gold">
+            <div class="pros__icon pros__icon--pipet">&nbsp;</div>
+          </div>
+          <div class="pros__text">Зручна для застосування піпетка.</div>
+        </li>
+        <li class="pros__item">
+          <div class="pros__circle pros__circle--blue">
+            <div class="pros__icon pros__icon--slice">&nbsp;</div>
+          </div>
+          <div class="pros__text">Приємний апельсиновий смак.</div>
+        </li>
+        <li class="pros__item">
+          <div class="pros__circle pros__circle--gold">
+            <div class="pros__icon pros__icon--standard">&nbsp;</div>
+          </div>
+          <div class="pros__text">Висока якість. Вироблено у Великобританії згідно з європейськими та міжнародними стандартами.</div>
+        </li>
+      </ul>
+
+      <div class="pros__slogan">
+        <span>Кілька крапель ЛітлВіт роблять харчування малюка не тільки смачним,</span>
+        <span>але й корисним. Кожний день. Цілий рік.</span>
+      </div>
+    </div>
+  </div>
