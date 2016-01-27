@@ -11,6 +11,12 @@ core = 7.x
 stylesheets[all][] = css/styles.css
 
 ; ========================================
+; Scripts
+; ========================================
+scripts[] = js/lib/modernizr.min.js
+scripts[] = js/lib/respond.min.js
+
+; ========================================
 ; Regions
 ; ========================================
 regions[branding] = Branding
