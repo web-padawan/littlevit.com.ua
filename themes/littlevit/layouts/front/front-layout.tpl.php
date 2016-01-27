@@ -19,8 +19,6 @@
         <li class="header__item header__item--last"><a class="header__navlink" href="#">Енкицлопедія вітамінів</a></li>
       </ul>
 
-      <a class="header__buy" href="#">Де купити</a>
-
       <hgroup class="header__hgroup">
         <h1 class="header__title">
           <span class="header__small">Мультівітамінні краплі</span>
@@ -28,6 +26,8 @@
         </h1>
         <h2 class="header__slogan">Для здоров'я і розвитку дитини</h2>
       </hgroup>
+
+      <a class="header__buy" href="#">Де купити</a>
 
       <a class="header__down" href="#">&nbsp;</a>
     </div>
