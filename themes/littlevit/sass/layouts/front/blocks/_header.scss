@@ -11,6 +11,7 @@
 
   &__brand {
     float: left;
+    max-width: 30%;
     padding-top: 30px;
   }
 
@@ -89,9 +90,12 @@
   }
 
   &__hgroup {
-    float: right;
-    margin: 180px 360px 0 0;
+    // float: right;
+    // margin: 180px 360px 0 0;
+    position: relative;
+    top: 180px;
     max-width: 555px;
+    margin: 0 auto;
     text-align: right;
   }
 
