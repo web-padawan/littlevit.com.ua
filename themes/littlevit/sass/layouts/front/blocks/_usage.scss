@@ -1,0 +1,101 @@
+.usage {
+  height: 780px;
+  padding: 145px 0 50px;
+  background: #fff;
+
+  &__inner {
+    @include container;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    color: $gray-mid;
+    font-family: $ptserif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  &__item {
+    width: 19.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &--baby {
+      @include sprite($s-baby);
+    }
+    &--child {
+      @include sprite($s-child);
+    }
+  }
+
+  &__age {
+    padding: 25px 0 30px;
+    background: $whitish;
+    color: $blue;
+    font-family: $ptserif-caption;
+    font-size: 21px;
+  }
+
+  &__descr {
+    margin-top: 9px;
+    line-height: 1.5;
+  }
+
+  &__value {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  &__dose {
+    padding: 22px 0;
+    background: $gold;
+    color: #fff;
+    font-family: $ptserif;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  &__step {
+    padding: 54px 12px 0;
+    text-align: center;
+  }
+
+  &__number {
+    @include line(3px, $blue);
+  }
+
+  &__digit {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 13px 20px;
+    border: solid 2px $blue;
+    color: $blue;
+    font-family: $ptserif-caption;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+
+  &__guide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 125px;
+    padding: 0 5px 25px;
+    vertical-align: middle;
+    border-bottom: solid 1px $blue;
+    color: $gray-mid;
+    font-family: $ptserif;
+    font-size: 16px;
+  }
+}
