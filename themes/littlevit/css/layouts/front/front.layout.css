@@ -372,8 +372,7 @@ html {
 }
 
 .usage {
-  height: 780px;
-  padding: 145px 0 50px;
+  padding: 145px 0 65px;
   background: #fff;
 }
 
@@ -515,4 +514,36 @@ html {
   color: #4c4c4c;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 16px;
+}
+
+.warn {
+  padding: 15px 0 24px;
+  background: #efbf03;
+  color: #fff;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.warn__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warn__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.warn__sign {
+  margin: 0 auto 10px;
+  width: 28px;
+  height: 28px;
+  border: solid 2px #fff;
+  line-height: 24px;
+  border-radius: 50%;
 }

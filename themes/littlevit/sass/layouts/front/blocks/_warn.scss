@@ -1,0 +1,22 @@
+.warn {
+  padding: 15px 0 24px;
+  background: $gold;
+  color: #fff;
+  font-family: $ptserif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  &__inner {
+    @include container;
+  }
+
+  &__sign {
+    margin: 0 auto 10px;
+    width: 28px;
+    height: 28px;
+    border: solid 2px #fff;
+    line-height: 24px;
+    border-radius: 50%;
+  }
+}

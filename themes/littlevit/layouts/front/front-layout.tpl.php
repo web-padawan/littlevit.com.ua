@@ -165,3 +165,11 @@
        </ul>
     </div>
   </div>
+
+  <div class="warn">
+    <div class="warn__inner">
+      <div class="warn__sign">!</div>
+      <p class="warn__text">Індивідуальна чутливість до компонентів.</p>
+      <p class="warn__text">Не використовувати, якщо дитина вже приймає будь-які інші вітаміни.</p>
+    </div>
+  </div>
