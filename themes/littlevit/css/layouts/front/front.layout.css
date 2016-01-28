@@ -128,6 +128,7 @@ html {
 
 .header__brand {
   float: left;
+  max-width: 30%;
   padding-top: 30px;
 }
 
@@ -212,9 +213,10 @@ html {
 }
 
 .header__hgroup {
-  float: right;
-  margin: 180px 360px 0 0;
+  position: relative;
+  top: 180px;
   max-width: 555px;
+  margin: 0 auto;
   text-align: right;
 }
 
@@ -514,6 +516,198 @@ html {
   color: #4c4c4c;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 16px;
+}
+
+.vitamins {
+  padding: 45px 0;
+  background: #fff;
+}
+
+.vitamins__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.vitamins__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.vitamins__title {
+  color: #4c4c4c;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.vitamins__table {
+  max-width: 96%;
+  margin: 45px auto 50px;
+}
+
+.vitamins__wrap--B {
+  width: 53%;
+  display: inline-block;
+  margin-right: 0;
+}
+
+.vitamins__wrap--C {
+  width: 60.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vitamins__item {
+  margin: 3px;
+  padding: 8px 24px;
+}
+
+.vitamins__item--A {
+  background: #ec753f;
+}
+
+.vitamins__item--B1 {
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 0 16px 24px;
+  background: #ffd642;
+}
+
+.vitamins__item--B2 {
+  margin-bottom: 6px;
+  padding: 7px 0 7px 24px;
+  background: #ffd642;
+}
+
+.vitamins__item--B3 {
+  padding: 8px 24px;
+  background: #ffd642;
+}
+
+.vitamins__item--B6 {
+  clear: both;
+  background: #ffd642;
+}
+
+.vitamins__item--B12 {
+  margin-top: 6px;
+  background: #ffd642;
+}
+
+.vitamins__item--C {
+  padding: 7px 0 7px 24px;
+  background: #cfe56b;
+}
+
+.vitamins__item--D3 {
+  margin-top: 6px;
+  background: #6dc8ff;
+}
+
+.vitamins__item--E {
+  width: 38.5%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+  padding: 33px 24px 34px;
+  background: #e764a9;
+}
+
+.vitamins__item--B9 {
+  background: #d4b4db;
+}
+
+.vitamins__name {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-family: "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.vitamins__name--B12 {
+  letter-spacing: -0.05em;
+}
+
+.vitamins__text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #1b1400;
+  font-family: "PTSansCaption", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.vitamins__text--A {
+  padding-left: 75px;
+}
+
+.vitamins__text--B1 {
+  padding-left: 40px;
+  width: 80%;
+  line-height: 1.4;
+}
+
+.vitamins__text--B2 {
+  padding-left: 15px;
+  width: 85%;
+}
+
+.vitamins__text--B3 {
+  padding-left: 15px;
+  width: 85%;
+}
+
+.vitamins__text--B6 {
+  padding-left: 40px;
+}
+
+.vitamins__text--B12 {
+  padding-left: 12px;
+}
+
+.vitamins__text--C {
+  padding-left: 70px;
+  width: 94%;
+}
+
+.vitamins__text--D3 {
+  padding-left: 40px;
+  width: 85%;
+}
+
+.vitamins__text--E {
+  padding-left: 15px;
+  width: 85%;
+}
+
+.vitamins__text--B9 {
+  padding-left: 50px;
+  width: 50%;
+}
+
+.vitamins__download {
+  display: block;
+  max-width: 335px;
+  padding: 20px;
+  margin: 0 auto 48px;
+  background: #efbf03;
+  color: #fff;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.vitamins__download:hover {
+  background: #bd9702;
 }
 
 .warn {

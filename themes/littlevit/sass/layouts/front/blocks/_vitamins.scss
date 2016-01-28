@@ -1,0 +1,164 @@
+.vitamins {
+  padding: 45px 0;
+  background: #fff;
+
+  &__inner {
+    @include container;
+    height: 100%;
+  }
+
+  &__title {
+    color: $gray-mid;
+    font-family: $ptserif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__table {
+    max-width: 96%;
+    margin: 45px auto 50px;
+  }
+
+  &__wrap {
+    &--B {
+      width: 53%;
+      display: inline-block;
+      margin-right: 0;
+    }
+    &--C {
+      width: 60.5%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &__item {
+    margin: 3px;
+    padding: 8px 24px;
+
+    &--A {
+      background: #ec753f;
+    }
+    &--B1 {
+      width: 46%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 16px 0 16px 24px;
+      background: #ffd642;
+    }
+    &--B2 {
+      margin-bottom: 6px;
+      padding: 7px 0 7px 24px;
+      background: #ffd642;
+    }
+    &--B3 {
+      padding: 8px 24px;
+      background: #ffd642;
+    }
+    &--B6 {
+      clear: both;
+      background: #ffd642;
+    }
+    &--B12 {
+      margin-top: 6px;
+      background: #ffd642;
+    }
+    &--C {
+      padding: 7px 0 7px 24px;
+      background: #cfe56b;
+    }
+    &--D3 {
+      margin-top: 6px;
+      background: #6dc8ff;
+    }
+    &--E {
+      width: 38.5%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 0;
+      padding: 33px 24px 34px;
+      background: #e764a9;
+    }
+    &--B9 {
+      background: #d4b4db;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: $ptsans;
+    font-size: 64px;
+    font-weight: bold;
+
+    &--B12 {
+      letter-spacing: -0.05em;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #1b1400;
+    font-family: $ptsans-caption;
+    font-size: 32px;
+    font-weight: bold;
+
+    &--A {
+      padding-left: 75px;
+    }
+    &--B1 {
+      padding-left: 40px;
+      width: 80%;
+      line-height: 1.4;
+    }
+    &--B2 {
+      padding-left: 15px;
+      width: 85%;
+    }
+    &--B3 {
+      padding-left: 15px;
+      width: 85%;
+    }
+    &--B6 {
+      padding-left: 40px;
+    }
+    &--B12 {
+      padding-left: 12px;
+    }
+    &--C {
+      padding-left: 70px;
+      width: 94%;
+    }
+    &--D3 {
+      padding-left: 40px;
+      width: 85%;
+    }
+    &--E {
+      padding-left: 15px;
+      width: 85%;
+    }
+    &--B9 {
+      padding-left: 50px;
+      width: 50%;
+    }
+  }
+
+  &__download {
+    display: block;
+    max-width: 335px;
+    padding: 20px;
+    margin: 0 auto 48px;
+    background: $gold;
+    color: #fff;
+    font-family: $ptserif;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    &:hover {
+      background: darken($gold, 10%);
+    }
+  }
+}

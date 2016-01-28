@@ -173,3 +173,67 @@
       <p class="warn__text">Не використовувати, якщо дитина вже приймає будь-які інші вітаміни.</p>
     </div>
   </div>
+
+  <div class="vitamins">
+    <div class="vitamins__inner">
+      <h2 class="vitamins__title">10 життєво важливих вітамінів</h2>
+
+      <div class="vitamins__table">
+
+        <div class="vitamins__item vitamins__item--A">
+          <span class="vitamins__name vitamins__name--A">A</span>
+          <span class="vitamins__text vitamins__text--A">для нормального стану шкіри та доброго зору</span>
+        </div>
+
+        <div class="vitamins__item vitamins__item--B1">
+          <span class="vitamins__name vitamins__name--B1">B1</span>
+          <span class="vitamins__text vitamins__text--B1">для нервової системи та нормальної роботи серця</span>
+        </div>
+
+        <div class="vitamins__wrap vitamins__wrap--B">
+          <div class="vitamins__item vitamins__item--B2">
+            <span class="vitamins__name vitamins__name--B2">B2</span>
+            <span class="vitamins__text vitamins__text--B2">для покращення метаболізму, зниження втоми</span>
+          </div>
+          <div class="vitamins__item vitamins__item--B3">
+            <span class="vitamins__name vitamins__name--B3">B3</span>
+            <span class="vitamins__text vitamins__text--B3">для розщеплення білків, жирів та вуглеводів</span>
+          </div>
+        </div>
+
+        <div class="vitamins__item vitamins__item--B6">
+          <span class="vitamins__name vitamins__name--B6">B6</span>
+          <span class="vitamins__text vitamins__text--B6">сприяє розщепленню білків, жирів та вуглеводів</span>
+        </div>
+
+        <div class="vitamins__item vitamins__item--B12">
+          <span class="vitamins__name vitamins__name--B12">B12</span>
+          <span class="vitamins__text vitamins__text--B12">сприяє вивільненню енергії з їжі</span>
+        </div>
+
+        <div class="vitamins__wrap vitamins__wrap--C">
+          <div class="vitamins__item vitamins__item--C">
+            <span class="vitamins__name vitamins__name--C">C</span>
+            <span class="vitamins__text vitamins__text--C">для нормального функціонування імунної системи та зниження втоми</span>
+          </div>
+          <div class="vitamins__item vitamins__item--D3">
+            <span class="vitamins__name vitamins__name--D3">D3</span>
+            <span class="vitamins__text vitamins__text--D3">для здорових кісток та зубів</span>
+          </div>
+        </div>
+
+        <div class="vitamins__item vitamins__item--E">
+          <span class="vitamins__name vitamins__name--E">E</span>
+          <span class="vitamins__text vitamins__text--E">діє у якості анти-оксиданту та покращує імунітет</span>
+        </div>
+
+        <div class="vitamins__item vitamins__item--B9">
+          <span class="vitamins__name vitamins__name--B9">Фолієва кислота</span>
+          <span class="vitamins__text vitamins__text--B9">для вироблення здорових кров'яних клітин</span>
+        </div>
+
+      </div>
+
+      <a class="vitamins__download" href="#">Завантажити інструкцію</a>
+    </div>
+  </div>
