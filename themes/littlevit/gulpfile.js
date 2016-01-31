@@ -24,7 +24,7 @@ gulp.task('sprites', function() {
               }
           }));
 
-    spriteData.img.pipe(gulp.dest('images/ftonr'));
+    spriteData.img.pipe(gulp.dest('images/front'));
     spriteData.css.pipe(gulp.dest('sass/layouts/front/helpers/'));
 });
 
