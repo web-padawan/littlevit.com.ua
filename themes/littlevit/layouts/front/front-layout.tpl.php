@@ -21,7 +21,7 @@
 
       <hgroup class="header__hgroup">
         <h1 class="header__title">
-          <span class="header__small">Мультівітамінні краплі</span>
+          <span class="header__small">Мультивітамінні краплі</span>
           <span class="header__large">ЛітлВіт</span>
         </h1>
         <h2 class="header__slogan">Для здоров'я і розвитку дитини</h2>
@@ -575,6 +575,32 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__panel">
+        <p class="footer__text"><b>ЛітлВіт</b>. Мультивітамінні краплі для дітей.</p>
+        <p class="footer__text">
+          <span>Дієтична добавка. Не є лікарським засобом. Без ГМО. Висновок державної</span>
+          <span>санітарно-епідеміологічної експертизи № 05.03.02-03/65902 від 28.10.2014 р.</span>
+        </p>
+        <p class="footer__text">Перед споживанням необхідно порадитися з лікарем.</p>
+      </div>
+
+      <div class="footer__panel">
+        <p class="footer__text">
+          <span>Виробник: «ВітрішнЮКЛтд» / «VitritionUKLtd», Великобританія, для</span>
+          <span>«АмбеЛімітед т/а АмбеМедікалГруп», Великобританія, «AmbeLimited t/a AmbeMedicalGroup»,</span>
+          <span>AmbeHouse, CommerceWay, Edinbridge, Kent TN8 6ED, UnitedKingdom, tel: 1 732 760 900.</span>
+        </p>
+        <p class="footer__text">
+          <span>Імпортер: ТОВ «БаДМ», Україна, 49 005, м. Дніпропетровськ, вул. Панікахи, 2,<br>тел. (056) 747−01−10.</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
 
   <!--noindex-->
   <?php if (!empty($messages)): ?>

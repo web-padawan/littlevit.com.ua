@@ -208,6 +208,7 @@ html {
 .contact .form-actions {
   float: right;
   clear: both;
+  margin: 0;
 }
 
 .contact .form-submit {
@@ -366,6 +367,40 @@ html {
   top: 18px;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 18px;
+}
+
+.footer {
+  padding: 60px 0 150px;
+  background: #5c5c5c;
+}
+
+.footer__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.footer__panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  width: 48%;
+  padding-left: 10px;
+  border-left: solid 2px #efbf03;
+}
+
+.footer__text {
+  color: #fff;
+  font-family: "PTSansNarrow", "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .header {

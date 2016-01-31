@@ -1,0 +1,24 @@
+.footer {
+  padding: 60px 0 150px;
+  background: $gray-mid2;
+
+  &__inner {
+    @include container;
+  }
+
+  &__panel {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    width: 48%;
+    padding-left: 10px;
+    border-left: solid 2px $gold;
+  }
+
+  &__text {
+    color: #fff;
+    font-family: $ptsans-narrow;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
