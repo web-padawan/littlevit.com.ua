@@ -106,7 +106,7 @@ html {
 }
 
 .encyclop {
-  padding: 65px 0 95px;
+  padding: 65px 0 75px;
   background: #94c133;
 }
 
@@ -459,16 +459,62 @@ html {
 }
 
 .map {
-  padding: 30px 0;
-  text-align: center;
+  height: 518px;
+  padding-top: 45px;
+}
+
+.map__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .map__title {
   margin-bottom: 40px;
-  padding: 15px 0;
   color: #4c4c4c;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 36px;
+  text-align: center;
+}
+
+.map__address {
+  float: left;
+  max-width: 30%;
+  padding-top: 45px;
+  padding-left: 80px;
+}
+
+.map__caption {
+  color: #108e96;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.map__list {
+  list-style-type: none;
+}
+
+.map__item {
+  margin: 42px 0;
+}
+
+.map__link {
+  color: #5d5d5d;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.map__link:hover {
+  color: #3e3e3e;
 }
 
 .modal {

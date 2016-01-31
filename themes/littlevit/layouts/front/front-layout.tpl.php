@@ -541,7 +541,18 @@
     <div class="map__inner">
       <h2 class="map__title">Де купити</h2>
 
-      <div id="map">&nbsp;</div>
+      <div class="map__address">
+        <h3 class="map__caption">Мережа аптек:</h3>
+
+        <ul class="map__list">
+          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 1</a></li>
+          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 2</a></li>
+          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 3</a></li>
+          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 4</a></li>
+        </ul>
+      </div>
+
+      <div class="map__frame" id="map">&nbsp;</div>
 
     </div>
   </div>
