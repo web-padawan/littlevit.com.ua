@@ -1,6 +1,10 @@
 (function($){
   $(document).ready(function(){
 
+    var script = document.createElement('script');
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDvkj4cMx9Vt2XjelNz_ypdYIQXDQKGps0&callback=initialize";
+    document.body.appendChild(script);
+
     // messages popup
     var $msg = $('#popup-messages');
     if (typeof $msg !== undefined && $msg.length) {

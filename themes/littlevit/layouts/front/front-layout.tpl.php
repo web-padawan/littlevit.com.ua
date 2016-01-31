@@ -537,6 +537,15 @@
     </div>
   </div>
 
+  <div class="map">
+    <div class="map__inner">
+      <h2 class="map__title">Де купити</h2>
+
+      <div id="map">&nbsp;</div>
+
+    </div>
+  </div>
+
   <!--noindex-->
   <?php if (!empty($messages)): ?>
     <div class="jqmWindow" id="popup-messages">
