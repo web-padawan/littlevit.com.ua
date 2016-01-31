@@ -552,8 +552,27 @@
         </ul>
       </div>
 
-      <div class="map__frame" id="map">&nbsp;</div>
+      <div class="map__wrapper">
+        <div class="map__frame" id="map">&nbsp;</div>
+      </div>
 
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact__inner">
+
+      <h3 class="contact__title">
+        <div class="contact__small">Виникли</div>
+        <div class="contact__large">питання?</div>
+      </h3>
+
+      <div class="contact__form">
+        <?php
+          $block = module_invoke('webform', 'block_view', 'client-block-2');
+          print render($block['content']);
+        ?>
+      </div>
     </div>
   </div>
 

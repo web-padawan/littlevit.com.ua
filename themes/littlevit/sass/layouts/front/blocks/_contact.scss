@@ -1,0 +1,113 @@
+.contact {
+  background: $gold;
+
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    float: left;
+    max-width: 40%;
+    margin-top: 40px;
+    margin-left: 18%;
+    padding-right: 20px;
+    vertical-align: top;
+    color: #fff;
+    font-family: $ptserif-caption;
+    font-style: italic;
+    text-align: right;
+  }
+
+  &__form {
+    float: left;
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+
+  &__small {
+    font-size: 28px;
+  }
+
+  &__large {
+    font-size: 54px;
+    line-height: 0.7;
+  }
+
+  // form field wrappers
+  &__fio {
+    float: left;
+    margin-bottom: 15px;
+  }
+
+  &__email {
+    float: left;
+    clear: left;
+    margin: 0;
+  }
+
+  &__text {
+    float: right;
+    margin: 0;
+    position: relative;
+    top: -45px;
+
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  // form fields
+  &__input {
+    max-width: 190px;
+    margin: 0;
+    padding: 6px 6px 6px 12px;
+    font-size: 14px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      border: solid 1px #999;
+    }
+  }
+
+  &__textarea {
+    max-width: 200px;
+    max-height: 75px;
+    margin: 0;
+    padding: 12px 6px 6px 12px;
+    font-size: 14px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      border: solid 1px #999;
+    }
+  }
+
+  .webform-client-form {
+    max-width: 410px;
+    overflow: hidden;
+  }
+
+  .form-actions {
+    float: right;
+    clear: both;
+  }
+
+  .form-submit {
+    position: relative;
+    top: -38px;
+    width: 200px;
+    padding: 7px 20px;
+    background: $blue;
+    color: #fff;
+    font-family: $ptserif-caption;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    &:hover {
+      background: darken($blue, 10%);
+    }
+  }
+}

@@ -105,6 +105,129 @@ html {
   font-style: italic;
 }
 
+.contact {
+  background: #efbf03;
+}
+
+.contact__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.contact__title {
+  float: left;
+  max-width: 40%;
+  margin-top: 40px;
+  margin-left: 18%;
+  padding-right: 20px;
+  vertical-align: top;
+  color: #fff;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-style: italic;
+  text-align: right;
+}
+
+.contact__form {
+  float: left;
+  width: 40%;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+.contact__small {
+  font-size: 28px;
+}
+
+.contact__large {
+  font-size: 54px;
+  line-height: 0.7;
+}
+
+.contact__fio {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.contact__email {
+  float: left;
+  clear: left;
+  margin: 0;
+}
+
+.contact__text {
+  float: right;
+  margin: 0;
+  position: relative;
+  top: -45px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.contact__input {
+  max-width: 190px;
+  margin: 0;
+  padding: 6px 6px 6px 12px;
+  font-size: 14px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.contact__input:focus {
+  outline: none;
+  border: solid 1px #999;
+}
+
+.contact__textarea {
+  max-width: 200px;
+  max-height: 75px;
+  margin: 0;
+  padding: 12px 6px 6px 12px;
+  font-size: 14px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.contact__textarea:focus {
+  outline: none;
+  border: solid 1px #999;
+}
+
+.contact .webform-client-form {
+  max-width: 410px;
+  overflow: hidden;
+}
+
+.contact .form-actions {
+  float: right;
+  clear: both;
+}
+
+.contact .form-submit {
+  position: relative;
+  top: -38px;
+  width: 200px;
+  padding: 7px 20px;
+  background: #108e96;
+  color: #fff;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact .form-submit:hover {
+  background: #0b6268;
+}
+
 .encyclop {
   padding: 65px 0 75px;
   background: #94c133;
@@ -459,7 +582,6 @@ html {
 }
 
 .map {
-  height: 518px;
   padding-top: 45px;
 }
 
@@ -506,6 +628,22 @@ html {
   margin: 42px 0;
 }
 
+.map__wrapper {
+  float: right;
+  width: 69%;
+  min-height: 390px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.map__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .map__link {
   color: #5d5d5d;
   font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
@@ -515,6 +653,13 @@ html {
 
 .map__link:hover {
   color: #3e3e3e;
+}
+
+.map__popover {
+  min-width: 150px;
+  min-height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .modal {
