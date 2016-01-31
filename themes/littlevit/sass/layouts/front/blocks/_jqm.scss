@@ -1,0 +1,55 @@
+.jqmWindow {
+  display: none;
+  left: 50%;
+  top: 20%;
+  position: fixed;
+}
+
+.jqmContentWrapper {
+  background: #fff;
+  position: relative;
+  left: -50%;
+}
+
+.jqmContent {
+  position: relative;
+  z-index: 1;
+}
+
+.jqmClose {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 7px;
+  right: 7px;
+  @include sprite($s-close);
+}
+
+.jqmOverlay {
+  background-color: #000;
+}
+
+#popup-messages {
+  .messages--status {
+    background: none;
+  }
+  .messages {
+    margin: 0;
+    padding: 30px;
+    border: none;
+    color: #555454;
+    font-family: $ptserif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.5;
+
+    a {
+      margin-top: 10px;
+      color: #04ade4;
+      font-size: 16px;
+      &:hover {
+        color: darken(#04ade4, 10%);
+      }
+    }
+  }
+}

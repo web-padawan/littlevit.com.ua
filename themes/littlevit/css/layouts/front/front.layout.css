@@ -105,6 +105,146 @@ html {
   font-style: italic;
 }
 
+.encyclop {
+  padding: 65px 0 95px;
+  background: #94c133;
+}
+
+.encyclop__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+.encyclop__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.encyclop__title {
+  margin-bottom: 60px;
+  color: #fff;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.encyclop__list {
+  list-style-type: none;
+}
+
+.encyclop__item {
+  position: relative;
+  margin: 0 10px 50px;
+  display: inline-block;
+  width: 18%;
+  min-height: 215px;
+  padding: 20px 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+.encyclop__item:hover {
+  background: #81b218;
+}
+
+.encyclop__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+
+.encyclop__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.encyclop__icon--sunflower {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px -156px;
+  width: 153px;
+  height: 151px;
+}
+
+.encyclop__icon--potato {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -179px 0px;
+  width: 175px;
+  height: 149px;
+}
+
+.encyclop__icon--spinach {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -153px -156px;
+  width: 191px;
+  height: 120px;
+}
+
+.encyclop__icon--prune {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px -307px;
+  width: 179px;
+  height: 112px;
+}
+
+.encyclop__icon--melon {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -354px 0px;
+  width: 160px;
+  height: 141px;
+}
+
+.encyclop__icon--cheese {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -514px -106px;
+  width: 122px;
+  height: 119px;
+}
+
+.encyclop__icon--orange {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px 0px;
+  width: 179px;
+  height: 156px;
+}
+
+.encyclop__icon--fish {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -514px 0px;
+  width: 153px;
+  height: 106px;
+}
+
+.encyclop__icon--cabbage {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -354px -141px;
+  width: 135px;
+  height: 133px;
+}
+
+.encyclop__icon--beans {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -179px -307px;
+  width: 174px;
+  height: 105px;
+}
+
+.encyclop__text {
+  position: relative;
+  top: 18px;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 18px;
+}
+
 .header {
   background: url("../../../images/front/header.jpg") no-repeat center top;
   width: 100%;
@@ -145,7 +285,7 @@ html {
 
 .header__flag {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -636px -106px;
+  background-position: -636px -134px;
   width: 29px;
   height: 19px;
   display: inline-block;
@@ -257,6 +397,92 @@ html {
   left: 47%;
   bottom: -34px;
   text-decoration: none;
+}
+
+.jqmWindow {
+  display: none;
+  left: 50%;
+  top: 20%;
+  position: fixed;
+}
+
+.jqmContentWrapper {
+  background: #fff;
+  position: relative;
+  left: -50%;
+}
+
+.jqmContent {
+  position: relative;
+  z-index: 1;
+}
+
+.jqmClose {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top: 7px;
+  right: 7px;
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -636px -106px;
+  width: 28px;
+  height: 28px;
+}
+
+.jqmOverlay {
+  background-color: #000;
+}
+
+#popup-messages .messages--status {
+  background: none;
+}
+
+#popup-messages .messages {
+  margin: 0;
+  padding: 30px;
+  border: none;
+  color: #555454;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#popup-messages .messages a {
+  margin-top: 10px;
+  color: #04ade4;
+  font-size: 16px;
+}
+
+#popup-messages .messages a:hover {
+  color: #0387b2;
+}
+
+.modal {
+  max-width: 720px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.modal__title {
+  margin-bottom: 40px;
+  padding: 15px 0;
+  background: #efbf03;
+  color: #fff;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 36px;
+}
+
+.modal__text {
+  padding: 0 40px;
+  color: #4c4c4c;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.modal__text--func {
+  margin-top: 20px;
 }
 
 .pros {
@@ -519,7 +745,7 @@ html {
 }
 
 .vitamins {
-  padding: 45px 0;
+  padding-top: 45px;
   background: #fff;
 }
 

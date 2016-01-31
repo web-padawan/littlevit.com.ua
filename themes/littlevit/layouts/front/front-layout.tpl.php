@@ -237,3 +237,315 @@
       <a class="vitamins__download" href="#">Завантажити інструкцію</a>
     </div>
   </div>
+
+  <div class="encyclop">
+    <div class="encyclop__inner">
+      <h2 class="encyclop__title">Енциклопедія вітамінів та мінералів</h2>
+
+      <ul class="encyclop__list">
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="A">
+            <span class="encyclop__icon encyclop__icon--sunflower">&nbsp;</span>
+            <span class="encyclop__text">Вітамін A</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B1">
+            <span class="encyclop__icon encyclop__icon--potato">&nbsp;</span>
+            <span class="encyclop__text">Вітамін B1</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B2">
+            <span class="encyclop__icon encyclop__icon--spinach">&nbsp;</span>
+            <span class="encyclop__text">Вітамін B2</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B3">
+            <span class="encyclop__icon encyclop__icon--prune">&nbsp;</span>
+            <span class="encyclop__text">Вітамін B3</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B6">
+            <span class="encyclop__icon encyclop__icon--melon">&nbsp;</span>
+            <span class="encyclop__text">Вітамін B6</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B12">
+            <span class="encyclop__icon encyclop__icon--cheese">&nbsp;</span>
+            <span class="encyclop__text">Вітамін B12</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="C">
+            <span class="encyclop__icon encyclop__icon--orange">&nbsp;</span>
+            <span class="encyclop__text">Вітамін C</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="D3">
+            <span class="encyclop__icon encyclop__icon--fish">&nbsp;</span>
+            <span class="encyclop__text">Вітамін D3</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="E">
+            <span class="encyclop__icon encyclop__icon--cabbage">&nbsp;</span>
+            <span class="encyclop__text">Вітамін E</span>
+          </a>
+        </li>
+        <li class="encyclop__item">
+          <a href="#" class="encyclop__link" data-target="B9">
+            <span class="encyclop__icon encyclop__icon--beans">&nbsp;</span>
+            <span class="encyclop__text">Фолієва кислота</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="jqmWindow" id="popup-vitamin-A">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін A</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, яєчний жовток, молоко, молочні продукти, морква,</span>
+                <span>савойська капуста, шпинат, гарбуз, абрикос, диня.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Один з основних антиоксидантів, що відповідає за захист організму</span>
+                <span>від впливу агресивно-активних форм кисню та вільних радикалів.</span>
+                <span>Відіграє головну роль у формуванні епітеліальної тканини, що входить</span>
+                <span>до складу шкіри, залоз і слизових оболонок, що вистилають органи дихального,</span>
+                <span>травного та сечостатевого трактів. Підвищує стійкість організму до</span>
+                <span>інфекційних захворювань та стимулює розвиток скелета.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-B1">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін B1</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Cвинина,печінка, нирки, картопля, крупи (вівсяна, пшенична, гречана),</span>
+                <span>хліб (ржаний та цільнозерновий), зелений горошок.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Необхідна складова безлічі ферментів, які в основному використовуються</span>
+                <span>для отримання енергії із їжі. Потрібен для синтезу білків та жирів.</span>
+                <span>Впливає на обмін речовин, що беруть участь у передачі нервового</span>
+                <span>імпульсу, необхідний для процесів скорочення м'язів. Нормалізує</span>
+                <span>мозковий кровообіг, підвищує здатність людини до навчання,</span>
+                <span>а крім того, бере участь у процесах кровотворення.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-B2">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін B2</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, нирки, сир, шипшина, незбиране молоко, бобові, зелений горошок,</span>
+                <span>м'ясо, крупи (гречана, вівсяна), хліб з борошна грубого помелу, шпинат.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Забезпечує здоров’я та гарний стан шкіри. Допомагає імунній</span>
+                <span>системі, зберігає в хорошій формі слизові оболонки, що</span>
+                <span>покривають дихальну і травну системи. Допомагає виробляти </span>
+                <span>антитіла для боротьби зі шкідливими мікроорганізмами.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-B3">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін B3</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, сир, м'ясо, крупи (гречана, пшоняна, вівсяна),</span>
+                <span>чорнослив, бобові, хліб (пшеничний, грубого помелу).</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Вітамін В3 ефективно знижує рівень холестерину, нормалізує</span>
+                <span>концентрацію ліпопротеїнів крові й підвищує вміст ЛПВЩ.</span>
+                <span>Розширює дрібні судини (у тому числі головного мозку), </span>
+                <span>покращує мікроциркуляцію крові, має слабкий антикоагулянтний </span>
+                <span>вплив. Край важливий для підтримки здорової шкіри.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+      <div class="jqmWindow" id="popup-vitamin-B6">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін B6</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, нирки, птиця, м'ясо, риба, бобові, диня, крупи (гречана, пшоняна,</span>
+                <span>ячна), перець, картопля, хліб (з борошна грубого помелу), гранат.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Необхідний для функціонування близько ста життєво важливих ферментів, які є</span>
+                <span>каталізаторами важливих хімічних реакцій людського організму. Бере участь</span>
+                <span>у процесах синтезу серотоніну&nbsp;— речовини, яку називають «гормоном щастя».</span>
+                <span>Серотонін контролює емоції, апетит і сон людини. Необхідний для синтезу </span>
+                <span>нуклеїнових кислот, а також для синтезу гема, компонента гемоглобіну.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-B12">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін B12</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, нирки, м’ясо, риба, сир.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Бере участь у регуляції процесу обміну білків і нуклеїнових кислот.</span>
+                <span>Сприяє зростанню і відновленню тканин. Необхідний для нормального</span>
+                <span>функціонування нервової системи. Необхідний для синтезу гемоглобіну&nbsp;—</span>
+                <span>переносника кисню від легенів до інших тканин організму.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-C">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін C</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Шипшина, петрушка, солодкий перець, чорна смородина, обліпиха, суниця,</span>
+                <span>цитрусові, ківі, капуста, зелений горошок, зелена цибуля, картопля.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Антиоксидант, який захищає молекули білків, жирів, вуглеводів</span>
+                <span>та нуклеїнових кислот від руйнування вільними радикалами.</span>
+                <span>Здатний відновлювати інші антиоксиданти, зокрема вітамін Е.</span>
+                <span>Необхідний для синтезу колагену&nbsp;— одного із структурних</span>
+                <span>компонентів стінок судин, зв'язок та кісток.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-D3">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін D3</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка тріски, риба, риб'ячий жир, печінка, яйця, вершкове масло, гриби шиітаке.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Підтримує необхідний рівень кальцію в крові, що важливо для</span>
+                <span>нормальної роботи нервової системи, росту кісток і підтримки</span>
+                <span>щільності кісткової тканини. Підсилює природний імунітет і пригнічує</span>
+                <span>аутоімунні процеси. Відіграє важливу роль у процесі секреції інсуліну.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-E">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Вітамін E</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Крупи, хліб, горіхи, брюсельська капуста.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Бореться з вільними радикалами. Вітамін Е запобігає окисленню ліпопротеїдів&nbsp;—</span>
+                <span>молекул, які складаються з жирів та білків і, окислюючись, стають причиною</span>
+                <span>розвитку багатьох серцево-судинних захворювань. Необхідний для нормального</span>
+                <span>функціонування імунної системи. Стимулює розслаблення судин.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+
+      <div class="jqmWindow" id="popup-vitamin-B9">
+        <div class="jqmContentWrapper">
+          <div class="jqmContent clearfix modal">
+            <section class="modal">
+              <h3 class="modal__title">Фолієва кислота</h3>
+              <p class="modal__text"><b>Джерело:</b></p>
+              <p class="modal__text">
+                <span>Печінка, печінка тріски, хліб (житній і цільнозерновий), бобові, петрушка, шпинат, салат, зелена цибуля.</span>
+              </p>
+              <p class="modal__text modal__text--func"><b>Основні функції:</b></p>
+              <p class="modal__text">
+                <span>Бере участь в обміні нуклеїнових кислот і амінокислот.</span>
+                <span>Фолієва кислота необхідна для нормального кровотворення.</span>
+              </p>
+            </section>
+          </div>
+          <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--noindex-->
+  <?php if (!empty($messages)): ?>
+    <div class="jqmWindow" id="popup-messages">
+      <div class="jqmContentWrapper">
+        <div class="jqmContent clearfix">
+          <?php print $messages; ?>
+        </div>
+        <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+      </div>
+    </div>
+  <?php endif ?>
+  <!--/noindex-->

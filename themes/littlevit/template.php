@@ -17,7 +17,7 @@ function littlevit_omega_layout_alter(&$layout) {
     if (isset($node) && $node->type == 'page') {
       if ((string) $nid == '1') {
         $layout = 'front';
-        // drupal_add_js(drupal_get_path('theme', 'evroteh') . '/js/lib/jquery.singlePageNav.min.js');
+        drupal_add_js(drupal_get_path('theme', 'littlevit') . '/js/lib/jqModal.min.js');
       }
     }
   }

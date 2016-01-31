@@ -1,0 +1,90 @@
+.encyclop {
+  padding: 65px 0 95px;
+  background: $lime;
+
+  &__inner {
+    @include container;
+    position: relative;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    color: #fff;
+    font-family: $ptserif;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 10px 50px;
+    display: inline-block;
+    width: 18%;
+    min-height: 215px;
+    padding: 20px 0;
+    vertical-align: top;
+    text-align: center;
+
+    &:hover {
+      background: $lime-dark;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+
+    &--sunflower {
+      @include sprite($s-sunflower);
+    }
+    &--potato {
+      @include sprite($s-potato);
+    }
+    &--spinach {
+      @include sprite($s-spinach);
+    }
+    &--prune {
+      @include sprite($s-prune);
+    }
+    &--melon {
+      @include sprite($s-melon);
+    }
+    &--cheese {
+      @include sprite($s-cheese);
+    }
+    &--orange {
+      @include sprite($s-orange);
+    }
+    &--fish {
+      @include sprite($s-fish);
+    }
+    &--cabbage {
+      @include sprite($s-cabbage);
+    }
+    &--beans {
+      @include sprite($s-beans);
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: 18px;
+    font-family: $ptserif;
+    font-size: 18px;
+  }
+}

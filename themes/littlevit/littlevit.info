@@ -15,6 +15,7 @@ stylesheets[all][] = css/styles.css
 ; ========================================
 scripts[] = js/lib/modernizr.min.js
 scripts[] = js/lib/respond.min.js
+scripts[] = js/littlevit.js
 
 ; ========================================
 ; Regions
