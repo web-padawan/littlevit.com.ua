@@ -5,6 +5,15 @@ function initialize() {
     ['Аптека Линда Фарм', 48.4344963, 35.0193656]
   ];
 
+  var infoWindowContent = [
+      ['<div class="map__popover">' +
+      '<h3>Аптека 24</h3>' +
+      '</div>'],
+      ['<div class="map__popover">' +
+      '<h3>Аптека Линда Фарм</h3>' +
+      '</div>'],
+  ];
+
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 48.431306, lng: 35.002261},
     zoom: 12,
@@ -26,7 +35,7 @@ function initialize() {
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
-        infowindow.setContent(locations[i][0]);
+        infowindow.setContent(infoWindowContent[i][0]);
         infowindow.open(map, marker);
       }
     })(marker, i));
