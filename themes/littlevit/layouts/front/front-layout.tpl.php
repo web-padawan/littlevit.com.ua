@@ -13,10 +13,18 @@
       </div>
 
       <ul class="header__nav">
-        <li class="header__item"><a class="header__navlink" href="#">Спосіб вживання</a></li>
-        <li class="header__item"><a class="header__navlink" href="#">Переваги</a></li>
-        <li class="header__item"><a class="header__navlink" href="#">Склад</a></li>
-        <li class="header__item header__item--last"><a class="header__navlink" href="#">Енкицлопедія вітамінів</a></li>
+        <li class="header__item">
+          <a class="header__navlink" href="#usage">Спосіб вживання</a>
+        </li>
+        <li class="header__item">
+          <a class="header__navlink" href="#pros">Переваги</a>
+        </li>
+        <li class="header__item">
+          <a class="header__navlink" href="#vitamins">Склад</a>
+        </li>
+        <li class="header__item header__item--last">
+          <a class="header__navlink" href="#encyclop">Енкицлопедія вітамінів</a>
+        </li>
       </ul>
 
       <hgroup class="header__hgroup">
@@ -27,13 +35,13 @@
         <h2 class="header__slogan">Для здоров'я і розвитку дитини</h2>
       </hgroup>
 
-      <a class="header__buy" href="#">Де купити</a>
+      <a id="buy" class="header__buy" href="#">Де купити</a>
 
-      <a class="header__down" href="#">&nbsp;</a>
+      <a id="down" class="header__down" href="#">&nbsp;</a>
     </div>
   </header>
 
-  <div class="pros">
+  <div id="pros" class="pros">
     <div class="pros__inner">
       <h2 class="pros__title">Переваги</h2>
 
@@ -71,7 +79,7 @@
     </div>
   </div>
 
-  <div class="usage">
+  <div id="usage" class="usage">
     <div class="usage__inner">
       <h2 class="usage__title">Спосіб вживання</h2>
 
@@ -174,7 +182,7 @@
     </div>
   </div>
 
-  <div class="vitamins">
+  <div id="vitamins" class="vitamins">
     <div class="vitamins__inner">
       <h2 class="vitamins__title">10 життєво важливих вітамінів</h2>
 
@@ -238,7 +246,7 @@
     </div>
   </div>
 
-  <div class="encyclop">
+  <div id="encyclop" class="encyclop">
     <div class="encyclop__inner">
       <h2 class="encyclop__title">Енциклопедія вітамінів та мінералів</h2>
 
@@ -537,7 +545,7 @@
     </div>
   </div>
 
-  <div class="map">
+  <div id="address" class="map">
     <div class="map__inner">
       <h2 class="map__title">Де купити</h2>
 

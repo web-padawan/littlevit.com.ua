@@ -22,5 +22,32 @@
       })
     });
 
+    // navigation links
+    $('.header__nav').singlePageNav({
+      offset: 0,
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function() {
+      },
+      onComplete: function() {
+      }
+    });
+
+    // scroll to address map
+    $('#buy').on('click', function(ev) {
+      ev.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#address").offset().top
+      }, 900);
+    });
+
+    // scroll down button
+    $('#down').on('click', function(ev) {
+      ev.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#pros").offset().top + 40
+      }, 300);
+    });
+
   });
 })(jQuery);

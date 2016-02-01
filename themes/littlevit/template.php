@@ -18,6 +18,7 @@ function littlevit_omega_layout_alter(&$layout) {
       if ((string) $nid == '1') {
         $layout = 'front';
         drupal_add_js(drupal_get_path('theme', 'littlevit') . '/js/lib/jqModal.min.js');
+        drupal_add_js(drupal_get_path('theme', 'littlevit') . '/js/lib/jquery.singlePageNav.min.js');
       }
     }
   }
