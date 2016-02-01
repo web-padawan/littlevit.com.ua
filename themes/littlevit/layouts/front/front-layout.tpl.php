@@ -12,6 +12,9 @@
         </div>
       </div>
 
+      <label for="toggle" class="header__toggle">&nbsp;</label>
+      <input id="toggle" type="checkbox" class="header__trigger" />
+
       <ul class="header__nav">
         <li class="header__item">
           <a class="header__navlink" href="#usage">Спосіб вживання</a>
@@ -29,8 +32,8 @@
 
       <hgroup class="header__hgroup">
         <h1 class="header__title">
-          <span class="header__small">Мультивітамінні краплі</span>
-          <span class="header__large">ЛітлВіт</span>
+          <div class="header__small">Мультивітамінні краплі</div>
+          <div class="header__large">ЛітлВіт</div>
         </h1>
         <h2 class="header__slogan">Для здоров'я і розвитку дитини</h2>
       </hgroup>

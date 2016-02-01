@@ -1,3 +1,10 @@
+// breakpoints
+$xs: 480px;
+$sm: 640px;
+$md: 1024px;
+$lg: 1180px;
+
+// grid
 $susy: (
   columns: 12,
   container: 1280px,
@@ -5,3 +12,7 @@ $susy: (
     // image: show,
   )
 );
+
+body {
+  min-width: 320px;
+}

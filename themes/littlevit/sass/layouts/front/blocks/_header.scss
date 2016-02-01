@@ -1,7 +1,15 @@
 .header {
-  background: url('../../../images/front/header.jpg') no-repeat center top;
+  background: url('../../../images/front/header_lg.jpg') no-repeat center top;
   width: 100%;
   height: 654px;
+
+  @include breakpoint(max-width $sm - 1) {
+    background: #d7d7d7 url('../../../images/front/header_sm.jpg') no-repeat center top;
+    height: 517px;
+  }
+  @include breakpoint($sm $lg - 1) {
+    background: url('../../../images/front/header_md.jpg') no-repeat center top;
+  }
 
   &__inner {
     @include container;
@@ -13,22 +21,53 @@
     float: left;
     max-width: 30%;
     padding-top: 30px;
+
+    @include breakpoint(max-width $sm - 1) {
+      padding-top: 10px;
+      max-width: 200px;
+    }
   }
 
   &__logo {
     background: url('../../../images/front/logo.png') no-repeat center top;
     width: 357px;
     height: 227px;
+
+    @include breakpoint(max-width $sm - 1) {
+      background: url('../../../images/front/logo_sm.png') no-repeat center top;
+      width: 266px;
+      height: 184px;
+      position: relative;
+      left: -20px;
+    }
   }
 
   &__madein {
     margin-top: 21px;
     margin-left: 32px;
+    overflow: hidden;
+
+    @include breakpoint(max-width $xs - 1) {
+      margin-right: 70px;
+    }
+    @include breakpoint($xs $sm - 1) {
+      float: right;
+    }
+    @include breakpoint(max-width $md - 1) {
+      max-width: 150px;
+      text-align: right;
+      line-height: 1.2;
+      margin-left: 0;
+    }
   }
 
   &__flag {
     @include sprite($s-madein);
     display: inline-block;
+
+    @include breakpoint(max-width $md - 1) {
+      float: right;
+    }
   }
 
   &__country {
@@ -37,16 +76,33 @@
     vertical-align: middle;
     color: $gray;
     font-family: $ptserif-caption;
-    font-size: 15px;
+    font-size: 12px;
+
+    @include breakpoint(max-width $xs - 1) {
+      font-size: 11px;
+    }
+    @include breakpoint(max-width $md - 1) {
+      float: right;
+      clear: both;
+    }
+    @include breakpoint($sm) {
+      font-size: 15px;
+    }
   }
 
   &__nav {
     float: right;
     width: 68%;
-    display: table;
     clear: right;
     margin-top: 60px;
     list-style-type: none;
+
+    @include breakpoint(max-width $lg - 1) {
+      display: none;
+    }
+    @include breakpoint($lg) {
+      display: table;
+    }
   }
 
   &__item {
@@ -87,26 +143,93 @@
     &:hover {
       background: darken($blue, 5%);
     }
+
+    @include breakpoint(max-width $sm - 1) {
+      padding: 12px 18px;
+      position: absolute;
+      bottom: 150px;
+      top: auto;
+      left: 40%;
+      margin: 0;
+      font-size: 18px;
+    }
+    @include breakpoint($sm $md - 1) {
+      padding: 15px 20px;
+      position: absolute;
+      bottom: 50px;
+      top: auto;
+      margin-left: 50px;
+    }
+    @include breakpoint($md $lg - 1) {
+      position: absolute;
+      bottom: 50px;
+      top: auto;
+    }
   }
 
   &__hgroup {
-    // float: right;
-    // margin: 180px 360px 0 0;
     position: relative;
     top: 180px;
-    max-width: 555px;
+    max-width: 595px;
     margin: 0 auto;
     text-align: right;
+
+    @include breakpoint(max-width $xs - 1) {
+      padding: 0;
+      position: static;
+      clear: both;
+      margin: 0;
+      max-width: 150px;
+    }
+    @include breakpoint($xs $sm - 1) {
+      padding: 0;
+      position: static;
+      clear: both;
+      margin: 0;
+      max-width: 200px;
+      padding-left: 50px;
+    }
+    @include breakpoint($sm $md - 1) {
+      top: 280px;
+    }
+    @include breakpoint($md $lg - 1) {
+      top: 200px;
+    }
   }
 
   &__title {
     color: $blue;
+
+    @include breakpoint(max-width $xs - 1) {
+      max-width: 150px;
+      position: relative;
+      top: 20px;
+      left: 10px;
+      padding-right: 30px;
+      text-align: right;
+    }
+    @include breakpoint($sm $lg - 1) {
+      padding-right: 200px;
+    }
   }
 
   &__small {
     font-family: $ptserif-caption;
     font-size: 42px;
     font-style: italic;
+
+    @include breakpoint(max-width $xs - 1) {
+      font-size: 13px;
+    }
+    @include breakpoint($xs $sm - 1) {
+      font-size: 16px;
+    }
+    @include breakpoint($sm $md - 1) {
+      font-size: 24px;
+    }
+    @include breakpoint($md $lg - 1) {
+      font-size: 32px;
+    }
   }
 
   &__large {
@@ -114,6 +237,19 @@
     font-size: 83px;
     font-weight: bold;
     font-style: italic;
+
+    @include breakpoint(max-width $xs - 1) {
+      font-size: 28px;
+    }
+    @include breakpoint($xs $sm - 1) {
+      font-size: 32px;
+    }
+    @include breakpoint($sm $md - 1) {
+      font-size: 48px;
+    }
+    @include breakpoint($md $lg - 1) {
+      font-size: 54px;
+    }
   }
 
   &__slogan {
@@ -124,6 +260,29 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.025em;
+
+    @include breakpoint(max-width $sm - 1) {
+      position: absolute;
+      top: auto;
+      bottom: 212px;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 20px 0;
+      background: $gold;
+      text-align: center;
+      font-size: 18px;
+    }
+    @include breakpoint($sm $md - 1) {
+      position: relative;
+      left: -200px;
+      top: 5px;
+    }
+    @include breakpoint($md $lg - 1) {
+      position: relative;
+      left: -200px;
+      top: 65px;
+    }
   }
 
   &__down {
@@ -133,5 +292,64 @@
     left: 47%;
     bottom: -34px;
     text-decoration: none;
+
+    @include breakpoint(max-width $md - 1) {
+      display: none;
+    }
+  }
+
+  &__trigger {
+    display: none;
+
+    &:checked {
+      ~ .header__nav {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        margin: 0;
+        background: $gray-dark;
+        opacity: 0.9;
+        padding: 100px 20px 20px 40px;
+        max-width: 250px;
+
+        .header__item {
+          display: block;
+          max-width: 250px;
+          padding: 20px 0;
+          border-bottom: solid 1px $blue;
+          &--last {
+            border: none;
+          }
+        }
+
+        .header__navlink {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  // small screen - toggle
+  &__toggle {
+    @include sprite($s-toggle);
+    position: absolute;
+    z-index: 100;
+    top: 60px;
+    left: 40px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include breakpoint(max-width $sm - 1) {
+      top: 40px;
+    }
+
+    @include breakpoint($lg) {
+      display: none;
+    }
   }
 }
