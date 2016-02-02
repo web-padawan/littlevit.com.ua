@@ -298,72 +298,72 @@ html {
 
 .encyclop__icon--sunflower {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px -156px;
-  width: 153px;
-  height: 151px;
+  background-position: -380px 0px;
+  width: 170px;
+  height: 170px;
 }
 
 .encyclop__icon--potato {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -179px 0px;
-  width: 175px;
-  height: 149px;
+  background-position: 0px 0px;
+  width: 190px;
+  height: 170px;
 }
 
 .encyclop__icon--spinach {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -153px -156px;
-  width: 191px;
-  height: 120px;
+  background-position: 0px -335px;
+  width: 205px;
+  height: 130px;
 }
 
 .encyclop__icon--prune {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px -307px;
-  width: 179px;
-  height: 112px;
+  background-position: -180px -170px;
+  width: 195px;
+  height: 130px;
 }
 
 .encyclop__icon--melon {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -354px 0px;
-  width: 160px;
-  height: 141px;
+  background-position: 0px -170px;
+  width: 180px;
+  height: 165px;
 }
 
 .encyclop__icon--cheese {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -514px -106px;
-  width: 122px;
-  height: 119px;
+  background-position: -550px -125px;
+  width: 145px;
+  height: 140px;
 }
 
 .encyclop__icon--orange {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px 0px;
-  width: 179px;
-  height: 156px;
+  background-position: -190px 0px;
+  width: 190px;
+  height: 170px;
 }
 
 .encyclop__icon--fish {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -514px 0px;
-  width: 153px;
-  height: 106px;
+  background-position: -550px 0px;
+  width: 165px;
+  height: 125px;
 }
 
 .encyclop__icon--cabbage {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -354px -141px;
-  width: 135px;
-  height: 133px;
+  background-position: -380px -170px;
+  width: 150px;
+  height: 150px;
 }
 
 .encyclop__icon--beans {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -179px -307px;
-  width: 174px;
-  height: 105px;
+  background-position: -205px -335px;
+  width: 190px;
+  height: 125px;
 }
 
 .encyclop__text {
@@ -499,7 +499,7 @@ html {
 
 .header__flag {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -636px -153px;
+  background-position: -685px -382px;
   width: 29px;
   height: 19px;
   display: inline-block;
@@ -798,7 +798,7 @@ html {
 
 .header__down {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -353px -307px;
+  background-position: -395px -335px;
   width: 67px;
   height: 67px;
   display: block;
@@ -847,7 +847,7 @@ html {
 
 .header__toggle {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -636px -134px;
+  background-position: -550px -415px;
   width: 31px;
   height: 19px;
   position: absolute;
@@ -899,7 +899,7 @@ html {
   top: 7px;
   right: 7px;
   background-image: url("../../../images/front/sprites.png");
-  background-position: -636px -106px;
+  background-position: -685px -354px;
   width: 28px;
   height: 28px;
 }
@@ -1107,28 +1107,28 @@ html {
 
 .pros__icon--drop {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px -419px;
+  background-position: 0px -465px;
   width: 46px;
   height: 70px;
 }
 
 .pros__icon--pipet {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -514px -314px;
+  background-position: -640px -265px;
   width: 75px;
   height: 75px;
 }
 
 .pros__icon--slice {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -420px -307px;
+  background-position: -462px -335px;
   width: 66px;
   height: 66px;
 }
 
 .pros__icon--standard {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -514px -225px;
+  background-position: -550px -265px;
   width: 90px;
   height: 89px;
 }
@@ -1200,14 +1200,14 @@ html {
 
 .usage__icon--baby {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -604px -225px;
+  background-position: -626px -354px;
   width: 59px;
   height: 59px;
 }
 
 .usage__icon--child {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -589px -314px;
+  background-position: -550px -354px;
   width: 76px;
   height: 61px;
 }
