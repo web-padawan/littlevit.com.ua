@@ -1,8 +1,12 @@
 .pros {
-  height: 570px;
+  min-height: 570px;
   padding-top: 80px;
   background: $lime;
   box-shadow: inset 0 40px 80px -60px;
+
+  @include breakpoint($tb $md - 1) {
+    min-height: 520px;
+  }
 
   &__inner {
     @include container;
@@ -21,12 +25,56 @@
   &__list {
     list-style-type: none;
     text-align: center;
+
+    @include breakpoint(max-width $tb - 1) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+    }
   }
 
   &__item {
     display: inline-block;
     vertical-align: top;
     width: 24.5%;
+
+    @include breakpoint(max-width $tb - 1) {
+      width: 48.5%;
+      margin-bottom: 40px;
+    }
+
+    &--slice {
+      @include breakpoint(max-width $tb - 1) {
+        order: 1;
+        .pros__circle {
+          background: $gold;
+        }
+      }
+    }
+    &--pipet {
+      @include breakpoint(max-width $tb - 1) {
+        order: 2;
+        .pros__circle {
+          background: $gold;
+        }
+      }
+    }
+    &--drop {
+      @include breakpoint(max-width $tb - 1) {
+        order: 3;
+        .pros__circle {
+          background: $blue;
+        }
+      }
+    }
+    &--standard {
+      @include breakpoint(max-width $tb - 1) {
+        order: 4;
+        .pros__circle {
+          background: $blue;
+        }
+      }
+    }
   }
 
   &__circle {
@@ -38,6 +86,11 @@
     border: solid 7px #fff;
     border-radius: 50%;
     text-align: center;
+    @include breakpoint(max-width $tb - 1) {
+      width: 100px;
+      height: 100px;
+      line-height: 85px;
+    }
 
     &--blue {
       background: $blue;
@@ -53,15 +106,31 @@
 
     &--drop {
       @include sprite($s-drop);
+
+      @include breakpoint(max-width $tb - 1) {
+        @include sprite($s-drop_sm);
+      }
     }
     &--pipet {
       @include sprite($s-pipet);
+
+      @include breakpoint(max-width $tb - 1) {
+        @include sprite($s-pipet_sm);
+      }
     }
     &--slice {
       @include sprite($s-slice);
+
+      @include breakpoint(max-width $tb - 1) {
+        @include sprite($s-slice_sm);
+      }
     }
     &--standard {
       @include sprite($s-standard);
+
+      @include breakpoint(max-width $tb - 1) {
+        @include sprite($s-standard_sm);
+      }
     }
   }
 
@@ -72,12 +141,19 @@
     font-family: $ptsans-narrow;
     font-size: 22px;
     line-height: 1.35;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 17px;
+      padding: 0 10px;
+    }
+    @include breakpoint($tb $md - 1) {
+      font-size: 18px;
+    }
   }
 
   &__slogan {
     background: url('../../../images/front/slogan.png') no-repeat center top;
     position: absolute;
-    bottom: -121px;
     left: 33%;
     width: 489px;
     height: 242px;
@@ -85,5 +161,21 @@
     color: $gray-light;
     font: bold italic 21px / 1.25 $ptserif;
     text-align: center;
+
+    @include breakpoint(max-width $xs - 1) {
+      bottom: -60px;
+      left: 12%;
+    }
+    @include breakpoint($xs $tb - 1) {
+      bottom: -60px;
+      left: 25%;
+    }
+    @include breakpoint(max-width $md - 1) {
+      background: url('../../../images/front/slogan_sm.png') no-repeat center top;
+      width: 278px;
+      height: 138px;
+      padding: 25px 15px 10px 65px;
+      font-size: 14px;
+    }
   }
 }

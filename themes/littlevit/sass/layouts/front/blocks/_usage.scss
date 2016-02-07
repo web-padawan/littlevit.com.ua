@@ -24,6 +24,18 @@
     width: 19.5%;
     display: inline-block;
     vertical-align: top;
+
+    &--small {
+      @include breakpoint(max-width $tb - 1) {
+        width: 33%;
+        margin-right: -2px;
+      }
+    }
+    &--wide {
+      @include breakpoint(max-width $tb - 1) {
+        width: 48.5%;
+      }
+    }
   }
 
   &__icon {
@@ -44,6 +56,11 @@
     color: $blue;
     font-family: $ptserif-caption;
     font-size: 21px;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 14px;
+      min-height: 167px;
+    }
   }
 
   &__descr {
@@ -63,6 +80,10 @@
     font-family: $ptserif;
     font-size: 21px;
     font-weight: bold;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 18px;
+    }
   }
 
   &__step {

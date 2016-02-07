@@ -203,9 +203,9 @@
     @include breakpoint(max-width $xs - 1) {
       max-width: 150px;
       position: relative;
+      height: 65px;
       top: 20px;
       left: 10px;
-      padding-right: 30px;
       text-align: right;
     }
     @include breakpoint($sm $lg - 1) {
@@ -220,6 +220,9 @@
 
     @include breakpoint(max-width $xs - 1) {
       font-size: 13px;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
     }
     @include breakpoint($xs $sm - 1) {
       font-size: 16px;
@@ -239,7 +242,10 @@
     font-style: italic;
 
     @include breakpoint(max-width $xs - 1) {
-      font-size: 28px;
+      position: absolute;
+      top: 5;
+      right: 15px;
+      font-size: 32px;
     }
     @include breakpoint($xs $sm - 1) {
       font-size: 32px;
@@ -264,11 +270,11 @@
     @include breakpoint(max-width $sm - 1) {
       position: absolute;
       top: auto;
-      bottom: 212px;
+      bottom: 230px;
       left: 0;
       right: 0;
       margin: 0;
-      padding: 20px 0;
+      padding: 12px 0;
       background: $gold;
       text-align: center;
       font-size: 18px;
@@ -345,7 +351,8 @@
     }
 
     @include breakpoint(max-width $sm - 1) {
-      top: 40px;
+      top: 50px;
+      left: 20px;
     }
 
     @include breakpoint($lg) {

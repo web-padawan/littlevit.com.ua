@@ -49,25 +49,25 @@
       <h2 class="pros__title">Переваги</h2>
 
       <ul class="pros__list">
-        <li class="pros__item">
+        <li class="pros__item pros__item--drop">
           <div class="pros__circle pros__circle--blue">
             <div class="pros__icon pros__icon--drop">&nbsp;</div>
           </div>
           <div class="pros__text">Ефективна форма.<br>Краплі більше підходять для здоров'я дітей молодшого віку, ніж пігулки та капсули.</div>
         </li>
-        <li class="pros__item">
+        <li class="pros__item pros__item--pipet">
           <div class="pros__circle pros__circle--gold">
             <div class="pros__icon pros__icon--pipet">&nbsp;</div>
           </div>
           <div class="pros__text">Зручна для застосування піпетка.</div>
         </li>
-        <li class="pros__item">
+        <li class="pros__item pros__item--slice">
           <div class="pros__circle pros__circle--blue">
             <div class="pros__icon pros__icon--slice">&nbsp;</div>
           </div>
           <div class="pros__text">Приємний апельсиновий смак.</div>
         </li>
-        <li class="pros__item">
+        <li class="pros__item pros__item--standard">
           <div class="pros__circle pros__circle--gold">
             <div class="pros__icon pros__icon--standard">&nbsp;</div>
           </div>
@@ -87,7 +87,7 @@
       <h2 class="usage__title">Спосіб вживання</h2>
 
        <ul class="usage__list">
-         <li class="usage__item">
+         <li class="usage__item usage__item--small">
            <div class="usage__age">
               <div class="usage__icon usage__icon--baby">&nbsp;</div>
               <div class="usage__descr">дітям віком</div>
@@ -95,7 +95,7 @@
            </div>
            <div class="usage__dose">0,25 мл на добу</div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--small">
            <div class="usage__age">
               <div class="usage__icon usage__icon--baby">&nbsp;</div>
               <div class="usage__descr">дітям віком</div>
@@ -103,7 +103,7 @@
            </div>
            <div class="usage__dose">0,5 мл на добу</div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--small">
            <div class="usage__age">
               <div class="usage__icon usage__icon--child">&nbsp;</div>
               <div class="usage__descr">дітям віком</div>
@@ -111,7 +111,7 @@
            </div>
            <div class="usage__dose">1 мл на добу</div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--wide">
            <div class="usage__age">
               <div class="usage__icon usage__icon--child">&nbsp;</div>
               <div class="usage__descr">дітям віком</div>
@@ -119,7 +119,7 @@
            </div>
            <div class="usage__dose">1,5 мл на добу</div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--wide">
            <div class="usage__age">
               <div class="usage__icon usage__icon--child">&nbsp;</div>
               <div class="usage__descr">дітям віком</div>
