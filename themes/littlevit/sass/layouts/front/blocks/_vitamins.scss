@@ -16,19 +16,24 @@
 
   &__table {
     max-width: 96%;
+    height: 100%;
     margin: 45px auto 50px;
   }
 
   &__wrap {
     &--B {
-      width: 53%;
-      display: inline-block;
-      margin-right: 0;
+      @extend %col-16;
+      margin-bottom: 3px;
+      overflow: hidden;
     }
     &--C {
-      width: 60.5%;
-      display: inline-block;
+      @extend %col-16;
+      margin-bottom: 3px;
       vertical-align: top;
+      overflow: hidden;
+    }
+    &--CD {
+      @extend %col-9;
     }
   }
 
@@ -37,49 +42,95 @@
     padding: 8px 24px;
 
     &--A {
+      @extend %col-16;
+      margin: 3px 0;
       background: #ec753f;
     }
     &--B1 {
-      width: 46%;
-      display: inline-block;
-      vertical-align: top;
-      padding: 16px 0 16px 24px;
+      @extend %col-7;
+      margin: 3px 0 0;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
       background: #ffd642;
+
+      @include breakpoint($sm $tb - 1) {
+        min-height: 100px;
+      }
+      @include breakpoint($tb $md - 1) {
+        min-height: 115px;
+      }
+      @include breakpoint($md $lg - 1) {
+        min-height: 132px;
+      }
+      @include breakpoint($lg $wd - 1) {
+        min-height: 145px;
+      }
+      @include breakpoint($wd) {
+        min-height: 165px;
+      }
     }
     &--B2 {
-      margin-bottom: 6px;
+      @extend %col-9;
+      @include last;
+      margin: 3px 0;
       padding: 7px 0 7px 24px;
       background: #ffd642;
     }
     &--B3 {
       padding: 8px 24px;
       background: #ffd642;
+      @extend %col-9;
+      @include last;
     }
     &--B6 {
-      clear: both;
+      @extend %col-16;
+      margin: 3px 0 6px;
       background: #ffd642;
     }
     &--B12 {
-      margin-top: 6px;
+      @extend %col-16;
+      margin: 3px 0;
       background: #ffd642;
     }
     &--C {
+      margin-left: 0;
       padding: 7px 0 7px 24px;
       background: #cfe56b;
     }
     &--D3 {
       margin-top: 6px;
+      margin-left: 0;
       background: #6dc8ff;
     }
     &--E {
-      width: 38.5%;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 0;
-      padding: 33px 24px 34px;
+      @extend %col-7;
+      @include last;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
       background: #e764a9;
+      padding-right: 0;
+
+      @include breakpoint($sm $tb - 1) {
+        min-height: 100px;
+      }
+      @include breakpoint($tb $md - 1) {
+        min-height: 115px;
+      }
+      @include breakpoint($md $lg - 1) {
+        min-height: 132px;
+      }
+      @include breakpoint($lg $wd - 1) {
+        min-height: 145px;
+      }
+      @include breakpoint($wd) {
+        min-height: 165px;
+      }
     }
     &--B9 {
+      @extend %col-16;
+      margin: 3px 0 0;
       background: #d4b4db;
     }
   }
@@ -89,8 +140,24 @@
     vertical-align: middle;
     color: #fff;
     font-family: $ptsans;
-    font-size: 64px;
+    font-size: 28px;
     font-weight: bold;
+
+    @include breakpoint($sm $tb - 1) {
+      font-size: 32px;
+    }
+    @include breakpoint($tb $md - 1) {
+      font-size: 36px;
+    }
+    @include breakpoint($md $lg - 1) {
+      font-size: 48px;
+    }
+    @include breakpoint($lg $wd - 1) {
+      font-size: 54px;
+    }
+    @include breakpoint($wd) {
+      font-size: 64px;
+    }
 
     &--B12 {
       letter-spacing: -0.05em;
@@ -102,8 +169,24 @@
     vertical-align: middle;
     color: #1b1400;
     font-family: $ptsans-caption;
-    font-size: 32px;
+    font-size: 14px;
     font-weight: bold;
+
+    @include breakpoint($sm $tb - 1) {
+      font-size: 13px;
+    }
+    @include breakpoint($tb $md - 1) {
+      font-size: 15px;
+    }
+    @include breakpoint($md $lg - 1) {
+      font-size: 20px;
+    }
+    @include breakpoint($lg $wd - 1) {
+      font-size: 24px;
+    }
+    @include breakpoint($wd) {
+      font-size: 28px;
+    }
 
     &--A {
       padding-left: 75px;
@@ -125,11 +208,19 @@
       padding-left: 40px;
     }
     &--B12 {
-      padding-left: 12px;
+      padding-left: 24px;
+
+      @include breakpoint($wd) {
+        padding-left: 12px;
+      }
     }
     &--C {
-      padding-left: 70px;
-      width: 94%;
+      max-width: 90%;
+      padding-left: 60px;
+
+      @include breakpoint($lg $wd - 1) {
+        padding-left: 70px;
+      }
     }
     &--D3 {
       padding-left: 40px;

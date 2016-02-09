@@ -2,6 +2,21 @@ body {
   min-width: 320px;
 }
 
+.vitamins__item--B1, .vitamins__item--E {
+  float: left;
+  width: 42.75%;
+}
+
+.vitamins__wrap--CD, .vitamins__item--B2, .vitamins__item--B3 {
+  float: left;
+  width: 56.25%;
+}
+
+.vitamins__wrap--B, .vitamins__wrap--C, .vitamins__item--A, .vitamins__item--B6, .vitamins__item--B12, .vitamins__item--B9 {
+  clear: both;
+  width: 100%;
+}
+
 html {
   font-size: 100%;
   line-height: 1.5em;
@@ -1708,19 +1723,19 @@ html {
 
 .vitamins__table {
   max-width: 96%;
+  height: 100%;
   margin: 45px auto 50px;
 }
 
 .vitamins__wrap--B {
-  width: 53%;
-  display: inline-block;
-  margin-right: 0;
+  margin-bottom: 3px;
+  overflow: hidden;
 }
 
 .vitamins__wrap--C {
-  width: 60.5%;
-  display: inline-block;
+  margin-bottom: 3px;
   vertical-align: top;
+  overflow: hidden;
 }
 
 .vitamins__item {
@@ -1729,19 +1744,54 @@ html {
 }
 
 .vitamins__item--A {
+  margin: 3px 0;
   background: #ec753f;
 }
 
 .vitamins__item--B1 {
-  width: 46%;
-  display: inline-block;
-  vertical-align: top;
-  padding: 16px 0 16px 24px;
+  margin: 3px 0 0;
+  min-height: 115px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   background: #ffd642;
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__item--B1 {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vitamins__item--B1 {
+    min-height: 115px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .vitamins__item--B1 {
+    min-height: 132px;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+  .vitamins__item--B1 {
+    min-height: 145px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vitamins__item--B1 {
+    min-height: 165px;
+  }
+}
+
 .vitamins__item--B2 {
-  margin-bottom: 6px;
+  float: right;
+  margin-right: 0;
+  margin: 3px 0;
   padding: 7px 0 7px 24px;
   background: #ffd642;
 }
@@ -1749,38 +1799,76 @@ html {
 .vitamins__item--B3 {
   padding: 8px 24px;
   background: #ffd642;
+  float: right;
+  margin-right: 0;
 }
 
 .vitamins__item--B6 {
-  clear: both;
+  margin: 3px 0 6px;
   background: #ffd642;
 }
 
 .vitamins__item--B12 {
-  margin-top: 6px;
+  margin: 3px 0;
   background: #ffd642;
 }
 
 .vitamins__item--C {
+  margin-left: 0;
   padding: 7px 0 7px 24px;
   background: #cfe56b;
 }
 
 .vitamins__item--D3 {
   margin-top: 6px;
+  margin-left: 0;
   background: #6dc8ff;
 }
 
 .vitamins__item--E {
-  width: 38.5%;
-  display: inline-block;
-  vertical-align: top;
+  float: right;
   margin-right: 0;
-  padding: 33px 24px 34px;
+  min-height: 115px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   background: #e764a9;
+  padding-right: 0;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__item--E {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vitamins__item--E {
+    min-height: 115px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .vitamins__item--E {
+    min-height: 132px;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+  .vitamins__item--E {
+    min-height: 145px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vitamins__item--E {
+    min-height: 165px;
+  }
 }
 
 .vitamins__item--B9 {
+  margin: 3px 0 0;
   background: #d4b4db;
 }
 
@@ -1789,8 +1877,38 @@ html {
   vertical-align: middle;
   color: #fff;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
-  font-size: 64px;
+  font-size: 28px;
   font-weight: bold;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__name {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vitamins__name {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .vitamins__name {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+  .vitamins__name {
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vitamins__name {
+    font-size: 64px;
+  }
 }
 
 .vitamins__name--B12 {
@@ -1802,8 +1920,38 @@ html {
   vertical-align: middle;
   color: #1b1400;
   font-family: "PTSansCaption", Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 14px;
   font-weight: bold;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vitamins__text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .vitamins__text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+  .vitamins__text {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vitamins__text {
+    font-size: 28px;
+  }
 }
 
 .vitamins__text--A {
@@ -1831,12 +1979,24 @@ html {
 }
 
 .vitamins__text--B12 {
-  padding-left: 12px;
+  padding-left: 24px;
+}
+
+@media (min-width: 1280px) {
+  .vitamins__text--B12 {
+    padding-left: 12px;
+  }
 }
 
 .vitamins__text--C {
-  padding-left: 70px;
-  width: 94%;
+  max-width: 90%;
+  padding-left: 60px;
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+  .vitamins__text--C {
+    padding-left: 70px;
+  }
 }
 
 .vitamins__text--D3 {

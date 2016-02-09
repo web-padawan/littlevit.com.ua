@@ -196,12 +196,11 @@
           <span class="vitamins__text vitamins__text--A">для нормального стану шкіри та доброго зору</span>
         </div>
 
-        <div class="vitamins__item vitamins__item--B1">
-          <span class="vitamins__name vitamins__name--B1">B1</span>
-          <span class="vitamins__text vitamins__text--B1">для нервової системи та нормальної роботи серця</span>
-        </div>
-
         <div class="vitamins__wrap vitamins__wrap--B">
+          <div class="vitamins__item vitamins__item--B1">
+            <span class="vitamins__name vitamins__name--B1">B1</span>
+            <span class="vitamins__text vitamins__text--B1">для нервової системи та нормальної роботи серця</span>
+          </div>
           <div class="vitamins__item vitamins__item--B2">
             <span class="vitamins__name vitamins__name--B2">B2</span>
             <span class="vitamins__text vitamins__text--B2">для покращення метаболізму, зниження втоми</span>
@@ -223,19 +222,20 @@
         </div>
 
         <div class="vitamins__wrap vitamins__wrap--C">
-          <div class="vitamins__item vitamins__item--C">
-            <span class="vitamins__name vitamins__name--C">C</span>
-            <span class="vitamins__text vitamins__text--C">для нормального функціонування імунної системи та зниження втоми</span>
+          <div class="vitamins__wrap vitamins__wrap--CD">
+            <div class="vitamins__item vitamins__item--C">
+              <span class="vitamins__name vitamins__name--C">C</span>
+              <span class="vitamins__text vitamins__text--C">для нормального функціонування імунної системи та зниження втоми</span>
+            </div>
+            <div class="vitamins__item vitamins__item--D3">
+              <span class="vitamins__name vitamins__name--D3">D3</span>
+              <span class="vitamins__text vitamins__text--D3">для здорових кісток та зубів</span>
+            </div>
           </div>
-          <div class="vitamins__item vitamins__item--D3">
-            <span class="vitamins__name vitamins__name--D3">D3</span>
-            <span class="vitamins__text vitamins__text--D3">для здорових кісток та зубів</span>
+          <div class="vitamins__item vitamins__item--E">
+            <span class="vitamins__name vitamins__name--E">E</span>
+            <span class="vitamins__text vitamins__text--E">діє у якості анти-оксиданту та покращує імунітет</span>
           </div>
-        </div>
-
-        <div class="vitamins__item vitamins__item--E">
-          <span class="vitamins__name vitamins__name--E">E</span>
-          <span class="vitamins__text vitamins__text--E">діє у якості анти-оксиданту та покращує імунітет</span>
         </div>
 
         <div class="vitamins__item vitamins__item--B9">

@@ -4,6 +4,7 @@ $sm: 640px;
 $tb: 768px;
 $md: 1024px;
 $lg: 1180px;
+$wd: 1280px;
 
 // grid
 $susy: (
@@ -17,3 +18,19 @@ $susy: (
 body {
   min-width: 320px;
 }
+
+%col-1 { float: left; width: 6.25%;   }
+%col-2 { float: left; width: 12.5%;   }
+%col-3 { float: left; width: 18.75%;  }
+%col-4 { float: left; width: 25%;     }
+%col-5 { float: left; width: 31.25%;  }
+%col-6 { float: left; width: 37.5%;   }
+%col-7 { float: left; width: 42.75%;  }
+%col-8 { float: left; width: 50%;     }
+%col-9 { float: left; width: 56.25%;  }
+%col-10 { float: left; width: 62.5%;  }
+%col-11 { float: left; width: 68.75%; }
+%col-12 { float: left; width: 75%;    }
+%col-13 { float: left; width: 81.25%; }
+%col-14 { float: left; width: 87.5%;  }
+%col-16 { clear: both; width: 100%;   }
