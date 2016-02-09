@@ -4,6 +4,14 @@
   background: $lime;
   box-shadow: inset 0 40px 80px -60px;
 
+  @include breakpoint(max-width $xs - 1) {
+    padding-top: 30px;
+    min-height: 500px;
+  }
+  @include breakpoint($xs $tb - 1) {
+    padding-top: 30px;
+    min-height: 480px;
+  }
   @include breakpoint($tb $md - 1) {
     min-height: 520px;
   }
@@ -20,6 +28,11 @@
     font-family: $ptserif;
     font-size: 36px;
     text-align: center;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -29,7 +42,7 @@
     @include breakpoint(max-width $tb - 1) {
       display: flex;
       flex-wrap: wrap;
-      padding-bottom: 100px;
+      padding-bottom: 80px;
     }
   }
 
@@ -40,12 +53,12 @@
 
     @include breakpoint(max-width $tb - 1) {
       width: 48.5%;
-      margin-bottom: 40px;
     }
 
     &--slice {
       @include breakpoint(max-width $tb - 1) {
         order: 1;
+        margin-bottom: 35px;
         .pros__circle {
           background: $gold;
         }
@@ -54,6 +67,7 @@
     &--pipet {
       @include breakpoint(max-width $tb - 1) {
         order: 2;
+        margin-bottom: 35px;
         .pros__circle {
           background: $gold;
         }
@@ -87,9 +101,10 @@
     border-radius: 50%;
     text-align: center;
     @include breakpoint(max-width $tb - 1) {
-      width: 100px;
-      height: 100px;
-      line-height: 85px;
+      margin-bottom: 8px;
+      width: 90px;
+      height: 90px;
+      line-height: 75px;
     }
 
     &--blue {
@@ -143,8 +158,9 @@
     line-height: 1.35;
 
     @include breakpoint(max-width $tb - 1) {
-      font-size: 17px;
       padding: 0 10px;
+      font-size: 16px;
+      line-height: 1.2;
     }
     @include breakpoint($tb $md - 1) {
       font-size: 18px;
@@ -162,13 +178,9 @@
     font: bold italic 21px / 1.25 $ptserif;
     text-align: center;
 
-    @include breakpoint(max-width $xs - 1) {
+    @include breakpoint(max-width $tb - 1) {
       bottom: -60px;
-      left: 12%;
-    }
-    @include breakpoint($xs $tb - 1) {
-      bottom: -60px;
-      left: 25%;
+      left: calc((100% - 278px) / 2);
     }
     @include breakpoint(max-width $md - 1) {
       background: url('../../../images/front/slogan_sm.png') no-repeat center top;

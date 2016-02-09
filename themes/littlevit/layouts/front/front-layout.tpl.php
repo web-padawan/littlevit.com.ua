@@ -93,7 +93,7 @@
               <div class="usage__descr">дітям віком</div>
               <div class="usage__value">4-6 місяців</div>
            </div>
-           <div class="usage__dose">0,25 мл на добу</div>
+           <div class="usage__dose"><span>0,25 мл на добу</span></div>
          </li>
          <li class="usage__item usage__item--small">
            <div class="usage__age">
@@ -101,7 +101,7 @@
               <div class="usage__descr">дітям віком</div>
               <div class="usage__value">7-12 місяців</div>
            </div>
-           <div class="usage__dose">0,5 мл на добу</div>
+           <div class="usage__dose"><span>0,5 мл на добу</span></div>
          </li>
          <li class="usage__item usage__item--small">
            <div class="usage__age">
@@ -109,7 +109,7 @@
               <div class="usage__descr">дітям віком</div>
               <div class="usage__value">12-36 місяців</div>
            </div>
-           <div class="usage__dose">1 мл на добу</div>
+           <div class="usage__dose"><span>1 мл на добу</span></div>
          </li>
          <li class="usage__item usage__item--wide">
            <div class="usage__age">
@@ -117,7 +117,7 @@
               <div class="usage__descr">дітям віком</div>
               <div class="usage__value">3-7 років</div>
            </div>
-           <div class="usage__dose">1,5 мл на добу</div>
+           <div class="usage__dose"><span>1,5 мл на добу</span></div>
          </li>
          <li class="usage__item usage__item--wide">
            <div class="usage__age">
@@ -130,7 +130,7 @@
        </ul>
 
        <ul class="usage__list">
-         <li class="usage__item">
+         <li class="usage__item usage__item--col">
            <div class="usage__step">
               <div class="usage__number">
                 <span class="usage__digit">1</span>
@@ -138,18 +138,18 @@
               <div class="usage__guide">Добре збовтати пляшечку перед використанням.</div>
            </div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--col">
            <div class="usage__step">
               <div class="usage__number">
                 <span class="usage__digit">2</span>
               </div>
               <div class="usage__guide">
-                <span>Наповнити рідиною піпетку до необхідного рівня та ввести напряму або</span>
-                <span>додати до води, соку або дитячого харчування.</span>
+                <span>Наповнити рідиною піпетку до необхідного рівня та ввести</span>
+                <span>напряму або додати до води, соку або дитячого харчування.</span>
               </div>
            </div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--col">
            <div class="usage__step">
               <div class="usage__number">
                 <span class="usage__digit">3</span>
@@ -157,7 +157,7 @@
              <div class="usage__guide">Прополоскати піпетку після використання.</div>
            </div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--col">
            <div class="usage__step">
               <div class="usage__number">
                 <span class="usage__digit">4</span>
@@ -165,7 +165,7 @@
              <div class="usage__guide">Не перевищувати рекомендовану дозу.</div>
            </div>
          </li>
-         <li class="usage__item">
+         <li class="usage__item usage__item--col">
            <div class="usage__step">
               <div class="usage__number">
                 <span class="usage__digit">5</span>

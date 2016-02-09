@@ -499,7 +499,7 @@ html {
 
 .header__flag {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -180px -300px;
+  background-position: -239px -300px;
   width: 29px;
   height: 19px;
   display: inline-block;
@@ -602,11 +602,35 @@ html {
   background: #0e787f;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 479px) {
   .header__buy {
-    padding: 12px 18px;
+    padding: 12px 35px;
     position: absolute;
-    bottom: 150px;
+    bottom: 165px;
+    top: auto;
+    left: 28%;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  .header__buy {
+    padding: 12px 35px;
+    position: absolute;
+    bottom: 165px;
+    top: auto;
+    left: 35%;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .header__buy {
+    padding: 12px 35px;
+    position: absolute;
+    bottom: 50px;
     top: auto;
     left: 40%;
     margin: 0;
@@ -614,9 +638,9 @@ html {
   }
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header__buy {
-    padding: 15px 20px;
+    padding: 15px 40px;
     position: absolute;
     bottom: 50px;
     top: auto;
@@ -853,7 +877,7 @@ html {
 
 .header__toggle {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -660px -415px;
+  background-position: -208px -300px;
   width: 31px;
   height: 19px;
   position: absolute;
@@ -906,7 +930,7 @@ html {
   top: 7px;
   right: 7px;
   background-image: url("../../../images/front/sprites.png");
-  background-position: -632px -415px;
+  background-position: -180px -300px;
   width: 28px;
   height: 28px;
 }
@@ -1055,6 +1079,20 @@ html {
   box-shadow: inset 0 40px 80px -60px;
 }
 
+@media (max-width: 479px) {
+  .pros {
+    padding-top: 30px;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .pros {
+    padding-top: 30px;
+    min-height: 480px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .pros {
     min-height: 520px;
@@ -1084,6 +1122,13 @@ html {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .pros__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .pros__list {
   list-style-type: none;
   text-align: center;
@@ -1095,7 +1140,7 @@ html {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1108,7 +1153,6 @@ html {
 @media (max-width: 767px) {
   .pros__item {
     width: 48.5%;
-    margin-bottom: 40px;
   }
 }
 
@@ -1116,6 +1160,7 @@ html {
   .pros__item--slice {
     -ms-flex-order: 1;
         order: 1;
+    margin-bottom: 35px;
   }
   .pros__item--slice .pros__circle {
     background: #efbf03;
@@ -1126,6 +1171,7 @@ html {
   .pros__item--pipet {
     -ms-flex-order: 2;
         order: 2;
+    margin-bottom: 35px;
   }
   .pros__item--pipet .pros__circle {
     background: #efbf03;
@@ -1165,9 +1211,10 @@ html {
 
 @media (max-width: 767px) {
   .pros__circle {
-    width: 100px;
-    height: 100px;
-    line-height: 85px;
+    margin-bottom: 8px;
+    width: 90px;
+    height: 90px;
+    line-height: 75px;
   }
 }
 
@@ -1226,7 +1273,7 @@ html {
 @media (max-width: 767px) {
   .pros__icon--slice {
     background-image: url("../../../images/front/sprites.png");
-    background-position: -594px -415px;
+    background-position: -448px -402px;
     width: 38px;
     height: 39px;
   }
@@ -1259,8 +1306,9 @@ html {
 
 @media (max-width: 767px) {
   .pros__text {
-    font-size: 17px;
     padding: 0 10px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 
@@ -1282,17 +1330,10 @@ html {
   text-align: center;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .pros__slogan {
     bottom: -60px;
-    left: 12%;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .pros__slogan {
-    bottom: -60px;
-    left: 25%;
+    left: calc((100% - 278px) / 2);
   }
 }
 
@@ -1309,6 +1350,12 @@ html {
 .usage {
   padding: 145px 0 65px;
   background: #fff;
+}
+
+@media (max-width: 767px) {
+  .usage {
+    padding: 65px 0 35px;
+  }
 }
 
 .usage__inner {
@@ -1333,9 +1380,22 @@ html {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .usage__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
 .usage__list {
   list-style-type: none;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .usage__list {
+    margin-bottom: 10px;
+  }
 }
 
 .usage__item {
@@ -1352,8 +1412,68 @@ html {
 }
 
 @media (max-width: 767px) {
+  .usage__item--small .usage__icon--baby {
+    background-image: url("../../../images/front/sprites.png");
+    background-position: -674px -415px;
+    width: 26px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--small .usage__icon--child {
+    background-image: url("../../../images/front/sprites.png");
+    background-position: -642px -415px;
+    width: 32px;
+    height: 27px;
+  }
+}
+
+@media (max-width: 767px) {
   .usage__item--wide {
     width: 48.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--wide .usage__age {
+    padding: 15px 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--wide .usage__dose {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--wide .usage__descr {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--wide .usage__value {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--wide .usage__icon--child {
+    background-image: url("../../../images/front/sprites.png");
+    background-position: -594px -415px;
+    width: 48px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .usage__item--col {
+    width: 48%;
+    margin-right: -2px;
   }
 }
 
@@ -1386,8 +1506,23 @@ html {
 
 @media (max-width: 767px) {
   .usage__age {
-    font-size: 14px;
+    min-height: 80px;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .usage__age {
     min-height: 167px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .usage__age {
+    min-height: 173px;
+    font-size: 16px;
   }
 }
 
@@ -1396,9 +1531,22 @@ html {
   line-height: 1.5;
 }
 
+@media (max-width: 767px) {
+  .usage__descr {
+    margin-top: 4px;
+    line-height: 1.1;
+  }
+}
+
 .usage__value {
   font-weight: bold;
   line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .usage__value {
+    line-height: 1.1;
+  }
 }
 
 .usage__dose {
@@ -1410,15 +1558,48 @@ html {
   font-weight: bold;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .usage__dose {
-    font-size: 18px;
+    font-size: 12px;
+    padding: 7px 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .usage__dose {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .usage__dose {
+    font-size: 16px;
+    padding: 15px 5px;
   }
 }
 
 .usage__step {
   padding: 54px 12px 0;
   text-align: center;
+}
+
+@media (max-width: 479px) {
+  .usage__step {
+    padding: 20px 0 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .usage__step {
+    padding: 20px 20px 0;
+  }
 }
 
 .usage__number {
@@ -1461,6 +1642,13 @@ html {
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  .usage__digit {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}
+
 .usage__guide {
   display: -ms-flexbox;
   display: flex;
@@ -1475,6 +1663,21 @@ html {
   color: #4c4c4c;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .usage__guide {
+    font-size: 11px;
+    height: 80px;
+    padding: 0 5px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .usage__guide {
+    font-size: 13px;
+    padding: 0 5px 10px;
+  }
 }
 
 .vitamins {
@@ -1677,6 +1880,14 @@ html {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .warn {
+    padding: 25px 0 35px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 .warn__inner {

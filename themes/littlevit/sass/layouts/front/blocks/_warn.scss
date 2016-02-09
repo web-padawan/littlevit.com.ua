@@ -7,6 +7,12 @@
   font-weight: bold;
   text-align: center;
 
+  @include breakpoint(max-width $tb - 1) {
+    padding: 25px 0 35px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
   &__inner {
     @include container;
   }

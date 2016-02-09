@@ -144,17 +144,35 @@
       background: darken($blue, 5%);
     }
 
-    @include breakpoint(max-width $sm - 1) {
-      padding: 12px 18px;
+    @include breakpoint(max-width $xs - 1) {
+      padding: 12px 35px;
       position: absolute;
-      bottom: 150px;
+      bottom: 165px;
+      top: auto;
+      left: 28%;
+      margin: 0;
+      font-size: 16px;
+    }
+    @include breakpoint($xs $sm - 1) {
+      padding: 12px 35px;
+      position: absolute;
+      bottom: 165px;
+      top: auto;
+      left: 35%;
+      margin: 0;
+      font-size: 16px;
+    }
+    @include breakpoint($sm $tb - 1) {
+      padding: 12px 35px;
+      position: absolute;
+      bottom: 50px;
       top: auto;
       left: 40%;
       margin: 0;
       font-size: 18px;
     }
-    @include breakpoint($sm $md - 1) {
-      padding: 15px 20px;
+    @include breakpoint($tb $md - 1) {
+      padding: 15px 40px;
       position: absolute;
       bottom: 50px;
       top: auto;

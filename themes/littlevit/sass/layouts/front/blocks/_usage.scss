@@ -2,6 +2,10 @@
   padding: 145px 0 65px;
   background: #fff;
 
+  @include breakpoint(max-width $tb - 1) {
+    padding: 65px 0 35px;
+  }
+
   &__inner {
     @include container;
     height: 100%;
@@ -13,11 +17,20 @@
     font-family: $ptserif;
     font-size: 36px;
     text-align: center;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
     list-style-type: none;
     text-align: center;
+
+    @include breakpoint(max-width $tb - 1) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item {
@@ -30,10 +43,57 @@
         width: 33%;
         margin-right: -2px;
       }
+      .usage__icon {
+        &--baby {
+          @include breakpoint(max-width $tb - 1) {
+            @include sprite($s-baby_sm);
+          }
+        }
+        &--child {
+          @include breakpoint(max-width $tb - 1) {
+            @include sprite($s-child_sm);
+          }
+        }
+      }
     }
     &--wide {
       @include breakpoint(max-width $tb - 1) {
         width: 48.5%;
+      }
+      .usage__age {
+        @include breakpoint(max-width $tb - 1) {
+          padding: 15px 0 20px;
+        }
+      }
+      .usage__dose {
+        @include breakpoint(max-width $tb - 1) {
+          padding: 15px 0;
+          font-size: 14px;
+        }
+      }
+      .usage__descr {
+        @include breakpoint(max-width $tb - 1) {
+          margin-top: 10px;
+          line-height: 1.5;
+        }
+      }
+      .usage__value {
+        @include breakpoint(max-width $tb - 1) {
+          line-height: 1.5;
+        }
+      }
+      .usage__icon {
+        &--child {
+          @include breakpoint(max-width $tb - 1) {
+            @include sprite($s-child_md);
+          }
+        }
+      }
+    }
+    &--col {
+      @include breakpoint(max-width $tb - 1) {
+        width: 48%;
+        margin-right: -2px;
       }
     }
   }
@@ -58,19 +118,37 @@
     font-size: 21px;
 
     @include breakpoint(max-width $tb - 1) {
-      font-size: 14px;
+      min-height: 80px;
+      padding: 10px 0;
+      font-size: 13px;
+    }
+    @include breakpoint($tb $md - 1) {
       min-height: 167px;
+      font-size: 14px;
+    }
+    @include breakpoint($md $lg - 1) {
+      min-height: 173px;
+      font-size: 16px;
     }
   }
 
   &__descr {
     margin-top: 9px;
     line-height: 1.5;
+
+    @include breakpoint(max-width $tb - 1) {
+      margin-top: 4px;
+      line-height: 1.1;
+    }
   }
 
   &__value {
     font-weight: bold;
     line-height: 1.5;
+
+    @include breakpoint(max-width $tb - 1) {
+      line-height: 1.1;
+    }
   }
 
   &__dose {
@@ -81,14 +159,33 @@
     font-size: 21px;
     font-weight: bold;
 
-    @include breakpoint(max-width $tb - 1) {
-      font-size: 18px;
+    @include breakpoint(max-width $xs - 1) {
+      font-size: 12px;
+      padding: 7px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include breakpoint($xs $tb - 1) {
+      font-size: 16px;
+      padding: 10px 5px;
+    }
+    @include breakpoint($tb $lg - 1) {
+      font-size: 16px;
+      padding: 15px 5px;
     }
   }
 
   &__step {
     padding: 54px 12px 0;
     text-align: center;
+
+    @include breakpoint(max-width $xs - 1) {
+      padding: 20px 0 0;
+    }
+    @include breakpoint($xs $tb - 1) {
+      padding: 20px 20px 0;
+    }
   }
 
   &__number {
@@ -104,6 +201,11 @@
     font-family: $ptserif-caption;
     font-size: 30px;
     border-radius: 50%;
+
+    @include breakpoint(max-width $tb - 1) {
+      padding: 8px 12px;
+      font-size: 18px;
+    }
   }
 
   &__guide {
@@ -117,5 +219,15 @@
     color: $gray-mid;
     font-family: $ptserif;
     font-size: 16px;
+
+    @include breakpoint(max-width $tb - 1) {
+      font-size: 11px;
+      height: 80px;
+      padding: 0 5px 10px;
+    }
+    @include breakpoint($tb $lg - 1) {
+      font-size: 13px;
+      padding: 0 5px 10px;
+    }
   }
 }
