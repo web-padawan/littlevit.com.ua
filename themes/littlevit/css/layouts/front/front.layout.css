@@ -1721,6 +1721,19 @@ html {
   text-align: center;
 }
 
+@media (max-width: 639px) {
+  .vitamins__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__title {
+    font-size: 24px;
+  }
+}
+
 .vitamins__table {
   max-width: 96%;
   height: 100%;
@@ -1732,10 +1745,24 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 639px) {
+  .vitamins__wrap--B {
+    margin-bottom: 0;
+  }
+}
+
 .vitamins__wrap--C {
   margin-bottom: 3px;
   vertical-align: top;
   overflow: hidden;
+}
+
+@media (max-width: 639px) {
+  .vitamins__wrap--CD {
+    float: none;
+    width: 100%;
+    clear: both;
+  }
 }
 
 .vitamins__item {
@@ -1748,14 +1775,27 @@ html {
   background: #ec753f;
 }
 
+@media (max-width: 639px) {
+  .vitamins__item--A {
+    margin-bottom: 0;
+  }
+}
+
 .vitamins__item--B1 {
   margin: 3px 0 0;
-  min-height: 115px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   background: #ffd642;
+}
+
+@media (max-width: 639px) {
+  .vitamins__item--B1 {
+    float: none;
+    width: 100%;
+    clear: both;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1766,7 +1806,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .vitamins__item--B1 {
-    min-height: 115px;
+    min-height: 108px;
   }
 }
 
@@ -1796,16 +1836,39 @@ html {
   background: #ffd642;
 }
 
+@media (max-width: 639px) {
+  .vitamins__item--B2 {
+    float: none;
+    width: 100%;
+    clear: both;
+  }
+}
+
 .vitamins__item--B3 {
-  padding: 8px 24px;
-  background: #ffd642;
   float: right;
   margin-right: 0;
+  padding: 8px 24px;
+  background: #ffd642;
+}
+
+@media (max-width: 639px) {
+  .vitamins__item--B3 {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin: 3px 0 0;
+  }
 }
 
 .vitamins__item--B6 {
   margin: 3px 0 6px;
   background: #ffd642;
+}
+
+@media (max-width: 639px) {
+  .vitamins__item--B6 {
+    margin-bottom: 0;
+  }
 }
 
 .vitamins__item--B12 {
@@ -1814,15 +1877,28 @@ html {
 }
 
 .vitamins__item--C {
+  position: relative;
   margin-left: 0;
   padding: 7px 0 7px 24px;
   background: #cfe56b;
+}
+
+@media (max-width: 639px) {
+  .vitamins__item--C {
+    margin: 0 0 3px;
+  }
 }
 
 .vitamins__item--D3 {
   margin-top: 6px;
   margin-left: 0;
   background: #6dc8ff;
+}
+
+@media (max-width: 639px) {
+  .vitamins__item--D3 {
+    margin: 3px 0 0;
+  }
 }
 
 .vitamins__item--E {
@@ -1837,6 +1913,16 @@ html {
   padding-right: 0;
 }
 
+@media (max-width: 639px) {
+  .vitamins__item--E {
+    float: none;
+    width: 100%;
+    clear: both;
+    min-height: auto;
+    margin: 3px 0 0;
+  }
+}
+
 @media (min-width: 640px) and (max-width: 767px) {
   .vitamins__item--E {
     min-height: 100px;
@@ -1845,7 +1931,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .vitamins__item--E {
-    min-height: 115px;
+    min-height: 108px;
   }
 }
 
@@ -1877,8 +1963,15 @@ html {
   vertical-align: middle;
   color: #fff;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
+  min-width: 40px;
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  .vitamins__name {
+    margin-left: 5%;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1911,6 +2004,15 @@ html {
   }
 }
 
+@media (max-width: 639px) {
+  .vitamins__name--B9 {
+    width: 100%;
+    display: block;
+    margin: 0 auto 5px;
+    text-align: center;
+  }
+}
+
 .vitamins__name--B12 {
   letter-spacing: -0.05em;
 }
@@ -1920,8 +2022,15 @@ html {
   vertical-align: middle;
   color: #1b1400;
   font-family: "PTSansCaption", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+}
+
+@media (max-width: 639px) {
+  .vitamins__text {
+    padding-left: 10px !important;
+    max-width: 75% !important;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1955,13 +2064,31 @@ html {
 }
 
 .vitamins__text--A {
-  padding-left: 75px;
+  padding-left: 45px;
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .vitamins__text--A {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .vitamins__text--A {
+    padding-left: 75px;
+  }
 }
 
 .vitamins__text--B1 {
-  padding-left: 40px;
   width: 80%;
   line-height: 1.4;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .vitamins__text--B1 {
+    padding-left: 40px;
+  }
 }
 
 .vitamins__text--B2 {
@@ -1971,15 +2098,27 @@ html {
 
 .vitamins__text--B3 {
   padding-left: 15px;
-  width: 85%;
+  width: 80%;
 }
 
 .vitamins__text--B6 {
-  padding-left: 40px;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .vitamins__text--B6 {
+    padding-left: 40px;
+  }
 }
 
 .vitamins__text--B12 {
-  padding-left: 24px;
+  padding-left: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .vitamins__text--B12 {
+    padding-left: 24px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1989,8 +2128,22 @@ html {
 }
 
 .vitamins__text--C {
-  max-width: 90%;
-  padding-left: 60px;
+  max-width: 85%;
+  padding-left: 40px;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .vitamins__text--C {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1179px) {
+  .vitamins__text--C {
+    padding-left: 55px;
+  }
 }
 
 @media (min-width: 1180px) and (max-width: 1279px) {
@@ -2000,8 +2153,15 @@ html {
 }
 
 .vitamins__text--D3 {
-  padding-left: 40px;
-  width: 85%;
+  width: 80%;
+  padding-left: 25px;
+}
+
+@media (min-width: 768px) {
+  .vitamins__text--D3 {
+    width: 85%;
+    padding-left: 40px;
+  }
 }
 
 .vitamins__text--E {
@@ -2012,6 +2172,16 @@ html {
 .vitamins__text--B9 {
   padding-left: 50px;
   width: 50%;
+}
+
+@media (max-width: 639px) {
+  .vitamins__text--B9 {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .vitamins__download {
@@ -2030,6 +2200,14 @@ html {
 
 .vitamins__download:hover {
   background: #bd9702;
+}
+
+@media (max-width: 639px) {
+  .vitamins__download {
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+  }
 }
 
 .warn {

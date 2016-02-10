@@ -245,7 +245,7 @@
 
       </div>
 
-      <a class="vitamins__download" href="#">Завантажити інструкцію</a>
+      <a class="vitamins__download" href="/sites/littlevit.com.ua/files/instruction.doc">Завантажити інструкцію</a>
     </div>
   </div>
 
