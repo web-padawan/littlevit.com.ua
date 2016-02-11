@@ -40,7 +40,7 @@
 
     &--small {
       @include breakpoint(max-width $tb - 1) {
-        width: 32.5%;
+        width: 32%;
       }
       .usage__icon {
         &--baby {
@@ -159,7 +159,7 @@
     font-weight: bold;
 
     @include breakpoint(max-width $xs - 1) {
-      font-size: 12px;
+      font-size: 11px;
       padding: 7px 5px;
       display: flex;
       justify-content: center;

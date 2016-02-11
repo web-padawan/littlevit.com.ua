@@ -1160,6 +1160,7 @@ html {
 
 @media (max-width: 1023px) {
   .jqmWindow.vitpopup {
+    top: 5%;
     left: 5%;
     right: 5%;
   }
@@ -1751,7 +1752,7 @@ html {
 
 @media (max-width: 767px) {
   .usage__item--small {
-    width: 32.5%;
+    width: 32%;
   }
 }
 
@@ -1904,7 +1905,7 @@ html {
 
 @media (max-width: 479px) {
   .usage__dose {
-    font-size: 12px;
+    font-size: 11px;
     padding: 7px 5px;
     display: -ms-flexbox;
     display: flex;
