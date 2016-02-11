@@ -316,8 +316,8 @@
         </li>
       </ul>
 
-      <div class="jqmWindow" id="popup-vitamin-A">
-        <div class="jqmContentWrapper">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-A">
+        <div class="jqmContentWrapper vitpopup">
           <div class="jqmContent clearfix modal">
             <section class="modal">
               <h3 class="modal__title">Вітамін A</h3>
@@ -341,7 +341,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-B1">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B1">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -366,7 +366,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-B2">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B2">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -389,7 +389,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-B3">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B3">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -412,7 +412,7 @@
           <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
         </div>
       </div>
-      <div class="jqmWindow" id="popup-vitamin-B6">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B6">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -436,7 +436,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-B12">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B12">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -458,7 +458,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-C">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-C">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -482,7 +482,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-D3">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-D3">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -504,7 +504,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-E">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-E">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -526,7 +526,7 @@
         </div>
       </div>
 
-      <div class="jqmWindow" id="popup-vitamin-B9">
+      <div class="jqmWindow vitpopup" id="popup-vitamin-B9">
         <div class="jqmContentWrapper">
           <div class="jqmContent clearfix modal">
             <section class="modal">
@@ -578,6 +578,8 @@
         <div class="contact__large">питання?</div>
       </h3>
 
+      <a id="question" class="contact__button" href="javascript:void(0);">Задати питання</a>
+
       <div class="contact__form">
         <?php
           $block = module_invoke('webform', 'block_view', 'client-block-2');
@@ -590,11 +592,11 @@
   <footer class="footer">
     <div class="footer__inner">
 
-      <div class="footer__panel">
+      <div class="footer__panel footer__panel--first">
         <p class="footer__text"><b>ЛітлВіт</b>. Мультивітамінні краплі для дітей.</p>
         <p class="footer__text">
           <span>Дієтична добавка. Не є лікарським засобом. Без ГМО. Висновок державної</span>
-          <span>санітарно-епідеміологічної експертизи № 05.03.02-03/65902 від 28.10.2014 р.</span>
+          <span>санітарно-епідеміологічної експертизи №&nbsp;05.03.02-03/65902 від 28.10.2014 р.</span>
         </p>
         <p class="footer__text">Перед споживанням необхідно порадитися з лікарем.</p>
       </div>
@@ -602,11 +604,11 @@
       <div class="footer__panel">
         <p class="footer__text">
           <span>Виробник: «ВітрішнЮКЛтд» / «VitritionUKLtd», Великобританія, для</span>
-          <span>«АмбеЛімітед т/а АмбеМедікалГруп», Великобританія, «AmbeLimited t/a AmbeMedicalGroup»,</span>
-          <span>AmbeHouse, CommerceWay, Edinbridge, Kent TN8 6ED, UnitedKingdom, tel: 1 732 760 900.</span>
+          <span>«АмбеЛімітед т/а АмбеМедікалГруп», Великобританія, «AmbeLimited&nbsp;t/a&nbsp;AmbeMedicalGroup»,</span>
+          <span>AmbeHouse, CommerceWay, Edinbridge, Kent TN8 6ED, UnitedKingdom, tel:&nbsp;1&nbsp;732&nbsp;760&nbsp;900.</span>
         </p>
         <p class="footer__text">
-          <span>Імпортер: ТОВ «БаДМ», Україна, 49 005, м. Дніпропетровськ, вул. Панікахи, 2,<br>тел. (056) 747−01−10.</span>
+          <span>Імпортер: ТОВ «БаДМ», Україна, 49005, м. Дніпропетровськ, вул. Панікахи, 2,<br>тел. (056)&nbsp;747−01−10.</span>
         </p>
       </div>
 
@@ -614,6 +616,18 @@
   </footer>
 
   <!--noindex-->
+  <div class="jqmWindow" id="popup-question">
+    <div class="jqmContentWrapper">
+      <div class="jqmContent clearfix question">
+        <?php
+          $block = module_invoke('webform', 'block_view', 'client-block-2');
+          print render($block['content']);
+        ?>
+      </div>
+      <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
+    </div>
+  </div>
+
   <?php if (!empty($messages)): ?>
     <div class="jqmWindow" id="popup-messages">
       <div class="jqmContentWrapper">

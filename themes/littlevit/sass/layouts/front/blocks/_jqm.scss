@@ -3,12 +3,25 @@
   left: 50%;
   top: 20%;
   position: fixed;
+
+  &.vitpopup {
+    @include breakpoint(max-width $md - 1) {
+      left: 5%;
+      right: 5%;
+    }
+  }
 }
 
 .jqmContentWrapper {
   background: #fff;
   position: relative;
   left: -50%;
+
+  .vitpopup & {
+    @include breakpoint(max-width $md - 1) {
+      left: initial;
+    }
+  }
 }
 
 .jqmContent {

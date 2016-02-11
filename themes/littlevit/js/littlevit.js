@@ -22,6 +22,11 @@
       })
     });
 
+    $('#question').on('click', function(ev) {
+      ev.preventDefault();
+      $('#popup-question').jqmShow();
+    });
+
     // navigation links
     $('.header__nav').singlePageNav({
       offset: 0,

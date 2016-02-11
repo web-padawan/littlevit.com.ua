@@ -113,6 +113,10 @@
     font-size: 15px;
     &--last {
       text-align: center;
+
+      @include breakpoint(max-width $sm - 1) {
+        text-align: left;
+      }
     }
   }
 
@@ -121,6 +125,11 @@
     color: $gray;
     font-size: 15px;
     text-decoration: none;
+
+    @include breakpoint(max-width $sm) {
+      font-size: 13px;
+    }
+
     &:hover {
       color: lighten($gray, 10%);
       text-decoration: underline;
@@ -333,7 +342,7 @@
         margin: 0;
         background: $gray-dark;
         opacity: 0.9;
-        padding: 100px 20px 20px 40px;
+        padding: 100px 20px 20px 20px;
         max-width: 250px;
 
         .header__item {

@@ -1,6 +1,10 @@
 .contact {
   background: $gold;
 
+  @include breakpoint(max-width $tb - 1) {
+    padding: 32px 0 38px
+  }
+
   &__inner {
     @include container;
   }
@@ -16,34 +20,108 @@
     font-family: $ptserif-caption;
     font-style: italic;
     text-align: right;
+
+    @include breakpoint(max-width $tb - 1) {
+      max-width: 200px;
+      float: none;
+      margin: 0 auto 25px;
+      padding-right: 0;
+      text-align: center;
+    }
+    @include breakpoint($tb $md - 1) {
+      margin-left: 10%;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include breakpoint(max-width $tb - 1) {
+      display: block;
+      background: $blue;
+      max-width: 220px;
+      margin: 0 auto;
+      color: #fff;
+      font-family: $ptserif-caption;
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        background: darken($blue, 10%);
+      }
+    }
   }
 
   &__form {
     float: left;
-    width: 40%;
+    width: 45%;
     padding-top: 40px;
     padding-left: 15px;
+
+    @include breakpoint(max-width $tb - 1) {
+      display: none;
+    }
+    @include breakpoint($tb $md - 1) {
+      width: 60%;
+    }
   }
 
   &__small {
     font-size: 28px;
+
+    @include breakpoint(max-width $sm - 1) {
+      display: inline-block;
+      font-size: 18px;
+    }
+    @include breakpoint($sm $tb - 1) {
+      display: inline-block;
+      line-height: 1;
+      font-size: 24px;
+    }
+    @include breakpoint($tb $md - 1) {
+      font-size: 24px;
+    }
   }
 
   &__large {
     font-size: 54px;
     line-height: 0.7;
+
+    @include breakpoint(max-width $sm - 1) {
+      display: inline-block;
+      font-size: 18px;
+    }
+    @include breakpoint($sm $tb - 1) {
+      display: inline-block;
+      line-height: 1;
+      font-size: 24px;
+    }
+    @include breakpoint($tb $md - 1) {
+      font-size: 40px;
+    }
   }
 
   // form field wrappers
   &__fio {
     float: left;
     margin-bottom: 15px;
+
+    .question & {
+      float: none;
+    }
   }
 
   &__email {
     float: left;
     clear: left;
     margin: 0;
+
+    .question & {
+      float: none;
+    }
   }
 
   &__text {
@@ -51,9 +129,13 @@
     margin: 0;
     position: relative;
     top: -45px;
-
     font-size: 14px;
     border-radius: 5px;
+
+    .question & {
+      float: none;
+      position: static;
+    }
   }
 
   // form fields
@@ -67,6 +149,13 @@
     &:focus {
       outline: none;
       border: solid 1px #999;
+      .question & {
+        border: solid 1px #999;
+      }
+    }
+
+    .question & {
+      border: solid 1px #ccc;
     }
   }
 
@@ -81,6 +170,15 @@
     &:focus {
       outline: none;
       border: solid 1px #999;
+      .question & {
+        border: solid 1px #999;
+      }
+    }
+
+    .question & {
+      margin: 20px auto;
+      max-width: 190px;
+      border: solid 1px #ccc;
     }
   }
 

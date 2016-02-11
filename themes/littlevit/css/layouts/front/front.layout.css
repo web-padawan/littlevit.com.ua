@@ -128,6 +128,12 @@ html {
   background: #efbf03;
 }
 
+@media (max-width: 767px) {
+  .contact {
+    padding: 32px 0 38px;
+  }
+}
+
 .contact__inner {
   max-width: 1280px;
   max-width: 80rem;
@@ -154,15 +160,87 @@ html {
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  .contact__title {
+    max-width: 200px;
+    float: none;
+    margin: 0 auto 25px;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact__title {
+    margin-left: 10%;
+  }
+}
+
+.contact__button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .contact__button {
+    display: block;
+    background: #108e96;
+    max-width: 220px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .contact__button:hover {
+    background: #0b6268;
+  }
+}
+
 .contact__form {
   float: left;
-  width: 40%;
+  width: 45%;
   padding-top: 40px;
   padding-left: 15px;
 }
 
+@media (max-width: 767px) {
+  .contact__form {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact__form {
+    width: 60%;
+  }
+}
+
 .contact__small {
   font-size: 28px;
+}
+
+@media (max-width: 639px) {
+  .contact__small {
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .contact__small {
+    display: inline-block;
+    line-height: 1;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact__small {
+    font-size: 24px;
+  }
 }
 
 .contact__large {
@@ -170,15 +248,44 @@ html {
   line-height: 0.7;
 }
 
+@media (max-width: 639px) {
+  .contact__large {
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .contact__large {
+    display: inline-block;
+    line-height: 1;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact__large {
+    font-size: 40px;
+  }
+}
+
 .contact__fio {
   float: left;
   margin-bottom: 15px;
+}
+
+.question .contact__fio {
+  float: none;
 }
 
 .contact__email {
   float: left;
   clear: left;
   margin: 0;
+}
+
+.question .contact__email {
+  float: none;
 }
 
 .contact__text {
@@ -188,6 +295,11 @@ html {
   top: -45px;
   font-size: 14px;
   border-radius: 5px;
+}
+
+.question .contact__text {
+  float: none;
+  position: static;
 }
 
 .contact__input {
@@ -204,6 +316,14 @@ html {
   border: solid 1px #999;
 }
 
+.question .contact__input:focus {
+  border: solid 1px #999;
+}
+
+.question .contact__input {
+  border: solid 1px #ccc;
+}
+
 .contact__textarea {
   max-width: 200px;
   max-height: 75px;
@@ -217,6 +337,16 @@ html {
 .contact__textarea:focus {
   outline: none;
   border: solid 1px #999;
+}
+
+.question .contact__textarea:focus {
+  border: solid 1px #999;
+}
+
+.question .contact__textarea {
+  margin: 20px auto;
+  max-width: 190px;
+  border: solid 1px #ccc;
 }
 
 .contact .webform-client-form {
@@ -253,6 +383,12 @@ html {
   background: #94c133;
 }
 
+@media (max-width: 639px) {
+  .encyclop {
+    padding: 35px 0 25px;
+  }
+}
+
 .encyclop__inner {
   max-width: 1280px;
   max-width: 80rem;
@@ -276,22 +412,65 @@ html {
   text-align: center;
 }
 
+@media (max-width: 639px) {
+  .encyclop__title {
+    font-size: 18px;
+    margin: 0 20px 30px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .encyclop__title {
+    font-size: 24px;
+  }
+}
+
 .encyclop__list {
   list-style-type: none;
+  text-align: center;
 }
 
 .encyclop__item {
   position: relative;
   margin: 0 10px 50px;
   display: inline-block;
-  width: 18%;
+  width: 43%;
   min-height: 215px;
   padding: 20px 0;
   vertical-align: top;
   text-align: center;
 }
 
-.encyclop__item:hover {
+@media (max-width: 639px) {
+  .encyclop__item {
+    -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    margin: 0;
+    min-height: 135px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .encyclop__item {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1179px) {
+  .encyclop__item {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .encyclop__item {
+    width: 18%;
+  }
+}
+
+.encyclop__item:hover .encyclop__link,
+.encyclop__item:hover .encyclop__text {
   background: #81b218;
 }
 
@@ -382,15 +561,28 @@ html {
 }
 
 .encyclop__text {
+  display: block;
   position: relative;
   top: 18px;
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 18px;
 }
 
+@media (max-width: 639px) {
+  .encyclop__text {
+    font-size: 20px;
+  }
+}
+
 .footer {
   padding: 60px 0 150px;
   background: #5c5c5c;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 10px 0 30px;
+  }
 }
 
 .footer__inner {
@@ -407,19 +599,46 @@ html {
 }
 
 .footer__panel {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-  width: 48%;
-  padding-left: 10px;
-  border-left: solid 2px #efbf03;
+  margin: 25px 15px;
+  text-align: center;
+}
+
+.footer__panel--first {
+  border-bottom: solid 1px #efbf03;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 640px) {
+  .footer__panel--first {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer__panel {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 10px;
+    padding-left: 10px;
+    border-left: solid 2px #efbf03;
+    text-align: left;
+  }
 }
 
 .footer__text {
   color: #fff;
   font-family: "PTSansNarrow", "PTSans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .footer__text {
+    font-size: 18px;
+    line-height: 1.7;
+  }
 }
 
 .header {
@@ -586,11 +805,23 @@ html {
   text-align: center;
 }
 
+@media (max-width: 639px) {
+  .header__item--last {
+    text-align: left;
+  }
+}
+
 .header__navlink {
   font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
   color: #3e3e3e;
   font-size: 15px;
   text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .header__navlink {
+    font-size: 13px;
+  }
 }
 
 .header__navlink:hover {
@@ -870,7 +1101,7 @@ html {
   margin: 0;
   background: #313131;
   opacity: 0.9;
-  padding: 100px 20px 20px 40px;
+  padding: 100px 20px 20px 20px;
   max-width: 250px;
 }
 
@@ -927,10 +1158,23 @@ html {
   position: fixed;
 }
 
+@media (max-width: 1023px) {
+  .jqmWindow.vitpopup {
+    left: 5%;
+    right: 5%;
+  }
+}
+
 .jqmContentWrapper {
   background: #fff;
   position: relative;
   left: -50%;
+}
+
+@media (max-width: 1023px) {
+  .vitpopup .jqmContentWrapper {
+    left: initial;
+  }
 }
 
 .jqmContent {
@@ -983,6 +1227,12 @@ html {
   padding-top: 45px;
 }
 
+@media (max-width: 639px) {
+  .map {
+    padding-top: 25px;
+  }
+}
+
 .map__inner {
   max-width: 1280px;
   max-width: 80rem;
@@ -1004,11 +1254,31 @@ html {
   text-align: center;
 }
 
+@media (max-width: 639px) {
+  .map__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .map__title {
+    font-size: 24px;
+  }
+}
+
 .map__address {
-  float: left;
-  max-width: 30%;
-  padding-top: 45px;
-  padding-left: 80px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .map__address {
+    float: left;
+    max-width: 30%;
+    padding-top: 45px;
+    padding-left: 80px;
+    text-align: left;
+  }
 }
 
 .map__caption {
@@ -1016,6 +1286,18 @@ html {
   font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
   font-size: 30px;
   font-style: italic;
+}
+
+@media (max-width: 639px) {
+  .map__caption {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .map__caption {
+    font-size: 24px;
+  }
 }
 
 .map__list {
@@ -1026,12 +1308,23 @@ html {
   margin: 42px 0;
 }
 
+@media (max-width: 639px) {
+  .map__item {
+    margin: 7px 0;
+  }
+}
+
 .map__wrapper {
-  float: right;
-  width: 69%;
+  position: relative;
   min-height: 390px;
   margin-top: 10px;
-  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .map__wrapper {
+    float: right;
+    width: 69%;
+  }
 }
 
 .map__frame {
@@ -1045,8 +1338,14 @@ html {
 .map__link {
   color: #5d5d5d;
   font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .map__link {
+    font-size: 18px;
+  }
 }
 
 .map__link:hover {
@@ -1061,9 +1360,14 @@ html {
 }
 
 .modal {
-  max-width: 720px;
   padding: 30px 0;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    max-width: 720px;
+  }
 }
 
 .modal__title {
@@ -1081,6 +1385,12 @@ html {
   font-family: "PTSerif", "Times New Roman", serif;
   font-size: 17px;
   line-height: 1.5;
+}
+
+@media (max-width: 1023px) {
+  .modal__text {
+    font-size: 14px;
+  }
 }
 
 .modal__text--func {
@@ -1362,6 +1672,26 @@ html {
   }
 }
 
+.question {
+  padding: 50px 30px 30px;
+}
+
+.question .form-submit {
+  width: 190px;
+  padding: 10px;
+  background: #108e96;
+  color: #fff;
+  font-family: "PTSerifCaption", "PTSerif", "Times New Roman", serif;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.question .form-submit:hover {
+  background: #0b6268;
+}
+
 .usage {
   padding: 145px 0 65px;
   background: #fff;
@@ -1421,8 +1751,7 @@ html {
 
 @media (max-width: 767px) {
   .usage__item--small {
-    width: 33%;
-    margin-right: -2px;
+    width: 32.5%;
   }
 }
 

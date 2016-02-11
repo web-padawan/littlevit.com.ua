@@ -2,23 +2,48 @@
   padding: 60px 0 150px;
   background: $gray-mid2;
 
+  @include breakpoint(max-width $sm) {
+    padding: 10px 0 30px;
+  }
+
   &__inner {
     @include container;
   }
 
   &__panel {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 10px;
-    width: 48%;
-    padding-left: 10px;
-    border-left: solid 2px $gold;
+    margin: 25px 15px;
+    text-align: center;
+
+    &--first {
+      border-bottom: solid 1px $gold;
+      padding-bottom: 25px;
+
+      @include breakpoint($sm) {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    @include breakpoint($sm) {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 0 0 10px;
+      padding-left: 10px;
+      border-left: solid 2px $gold;
+      text-align: left;
+    }
   }
 
   &__text {
     color: #fff;
     font-family: $ptsans-narrow;
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.5;
+
+    @include breakpoint($sm) {
+      font-size: 18px;
+      line-height: 1.7;
+    }
   }
 }

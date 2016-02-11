@@ -1,0 +1,18 @@
+.question {
+  padding: 50px 30px 30px;
+
+  .form-submit {
+    width: 190px;
+    padding: 10px;
+    background: $blue;
+    color: #fff;
+    font-family: $ptserif-caption;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    &:hover {
+      background: darken($blue, 10%);
+    }
+  }
+}
