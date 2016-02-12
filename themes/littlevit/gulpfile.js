@@ -7,6 +7,7 @@ var gulp          = require('gulp'),
     postcss       = require('gulp-postcss'),
     autoprefixer  = require('autoprefixer'),
     browserSync   = require('browser-sync'),
+    mqpacker      = require('css-mqpacker'),
     plumber       = require('gulp-plumber'),
     path          = require('path');
 
@@ -38,7 +39,10 @@ gulp.task('styles', function() {
       outputStyle: 'expanded',
       includePaths: ['./sass', 'node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
     }))
-    .pipe(postcss([ autoprefixer({ browsers: ['IE >= 9'] }) ]))
+    .pipe(postcss([
+        autoprefixer({browsers: ['IE >= 9'] }),
+        mqpacker
+    ]))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream:true}));
 });
