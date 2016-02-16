@@ -1,43 +1,58 @@
-function initialize() {
+var map;
+var markers = [];
+var Dnepr = {lat: 48.4666008, lng: 35.018155};
 
-  var locations = [
-    ['Аптека 24', 48.4079623, 35.0393906],
-    ['Аптека Линда Фарм', 48.4344963, 35.0193656]
-  ];
+function initMap(pharm) {
+  var pharm = pharm || 'аптека медицинской академии';
 
-  var infoWindowContent = [
-      ['<div class="map__popover">' +
-      '<h3>Аптека 24</h3>' +
-      '</div>'],
-      ['<div class="map__popover">' +
-      '<h3>Аптека Линда Фарм</h3>' +
-      '</div>'],
-  ];
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 48.431306, lng: 35.002261},
-    zoom: 12,
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: Dnepr,
+    zoom: 11,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
 
   var infowindow = new google.maps.InfoWindow();
-  var marker, i;
-  var markers = [];
 
-  for (i = 0; i < locations.length; i++) {
+  var service = new google.maps.places.PlacesService(map);
 
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-      map: map
-    });
-
-    markers.push(marker);
-
-    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-      return function() {
-        infowindow.setContent(infoWindowContent[i][0]);
-        infowindow.open(map, marker);
+  service.nearbySearch({
+    location: Dnepr,
+    radius: 30000,
+    name: pharm
+  }, function (results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
       }
-    })(marker, i));
+    } else if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+      setTimeout(function() {
+        createMarker(results[i]);
+      }, 250);
+    }
+  });
+
+  function createMarker(place) {
+    service.getDetails({
+      placeId: place.place_id
+    }, function(place, status) {
+
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        markers.push(marker);
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(
+            '<div class="map__popover"><b>' + place.name + '</b><br>' +
+            place.formatted_address + '</div>'
+          );
+          infowindow.open(map, this);
+        });
+      }
+    });
   }
 };

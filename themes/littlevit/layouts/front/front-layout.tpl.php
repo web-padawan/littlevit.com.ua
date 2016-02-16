@@ -556,10 +556,10 @@
         <h3 class="map__caption">Мережа аптек:</h3>
 
         <ul class="map__list">
-          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 1</a></li>
-          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 2</a></li>
-          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 3</a></li>
-          <li class="map__item"><a href="#" class="map__link">Аптека Адреса № 4</a></li>
+          <li class="map__item"><a id="pharmAcademy" href="#" class="map__link">Аптека Медичної академії</a></li>
+          <li class="map__item"><a id="pharmNeboley" href="#" class="map__link">Аптека низьких цін</a></li>
+          <li class="map__item"><a id="pharmLowPrice" href="#" class="map__link">Аптека «Не болей»</a></li>
+          <li class="map__item"><a id="pharmRuan" href="#" class="map__link">Аптека «Руан»</a></li>
         </ul>
       </div>
 

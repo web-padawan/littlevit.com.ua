@@ -2,7 +2,7 @@
   $(document).ready(function(){
 
     var script = document.createElement('script');
-    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDvkj4cMx9Vt2XjelNz_ypdYIQXDQKGps0&callback=initialize";
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBsRc02ErDI2eUFcdRpmTMlgSSKYjzkfrY&libraries=places&callback=initMap";
     document.body.appendChild(script);
 
     // messages popup
@@ -54,5 +54,24 @@
       }, 300);
     });
 
+    $('#pharmAcademy').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека медицинской академии');
+    });
+
+    $('#pharmNeboley').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека не болей');
+    });
+
+    $('#pharmLowPrice').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека низких цен');
+    });
+
+    $('#pharmRuan').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека руан');
+    });
   });
 })(jQuery);
