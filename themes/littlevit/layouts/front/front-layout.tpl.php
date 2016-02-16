@@ -557,8 +557,8 @@
 
         <ul class="map__list">
           <li class="map__item"><a id="pharmAcademy" href="#" class="map__link">Аптека Медичної академії</a></li>
-          <li class="map__item"><a id="pharmNeboley" href="#" class="map__link">Аптека низьких цін</a></li>
-          <li class="map__item"><a id="pharmLowPrice" href="#" class="map__link">Аптека «Не болей»</a></li>
+          <li class="map__item"><a id="pharmLowPrice" href="#" class="map__link">Аптека низьких цін</a></li>
+          <li class="map__item"><a id="pharmNeboley" href="#" class="map__link">Аптека «Не болей»</a></li>
           <li class="map__item"><a id="pharmRuan" href="#" class="map__link">Аптека «Руан»</a></li>
         </ul>
       </div>
