@@ -799,17 +799,17 @@ html {
 }
 
 .modal {
-  padding: 25px 0 15px;
+  padding: 20px 0 10px;
   text-align: center;
 }
 
 .modal__title {
-  margin-bottom: 40px;
-  padding: 15px 0;
+  margin-bottom: 20px;
+  padding: 10px 0;
   background: #efbf03;
   color: #fff;
   font-family: "PTSerif", "Times New Roman", serif;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .modal__text {
@@ -2163,6 +2163,7 @@ html {
 
   .modal__text {
     font-size: 13px;
+    line-height: 1.25;
   }
 
   .pros__slogan {
@@ -2202,6 +2203,13 @@ html {
 
   .modal {
     max-width: 720px;
+    padding: 25px 0 15px;
+  }
+
+  .modal__title {
+    margin-bottom: 40px;
+    padding: 15px 0;
+    font-size: 36px;
   }
 }
 
