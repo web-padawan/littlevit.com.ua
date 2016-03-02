@@ -20,7 +20,7 @@
 
   .vitpopup & {
     @include breakpoint(max-width $md - 1) {
-      left: initial;
+      left: auto;
     }
   }
 }

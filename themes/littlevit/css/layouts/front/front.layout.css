@@ -2158,7 +2158,7 @@ html {
   }
 
   .vitpopup .jqmContentWrapper {
-    left: initial;
+    left: auto;
   }
 
   .modal__text {
